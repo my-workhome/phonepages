@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1,minimun-scale=1,user-scalable=no">
+	<title>忘记支付密码</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/wk_all.css">
+  <link rel="stylesheet" type="text/css" href="../css/yqh_all.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script>
+    $(function () {
+      $(".btn-distance").click(function () {
+        window.location.href="../pages/输入新支付密码.html"
+      });
+    });
+  </script>
+</head>
+<body class="gray_bg ">
+<div class="gray_gbdiv "></div>
+<div class="gray_gbdiv "></div>
+
+<!--提示图标 start -->
+	  <div class="prompt-icon">    
+        <img style="width:1.866667rem; height:1.866667rem;" src="../img/icon_9.png" alt="">  
+        <div class="prompt-line"></div> 
+        <img style="width:1.866667rem; height:1.866667rem;" src="../img/icon_8.png" alt="">
+      </div>
+
+  <div class="prompt-icon">
+      <div class="text-box"><h5>身份证验证</h5></div>
+      <div class="prompt-line-none"></div> 
+      <div class="text-box"><h5>短信验证</h5></div>    
+</div>
+<!--提示图标 end -->
+
+<div class="gray_gbdiv "></div>
+
+<!--表单填写 start -->
+  <div class="white_bg">
+    <div class="top_below2 "  style="border-bottom: #ececec 1px solid;">
+     <div class="service text_30pxstrong">手机号</div>    
+     <div class="unservice" style="text-align: left;font-size:0.4rem;">
+      130********765
+     </div>
+
+<button id="getphone" type="button" class="btn btn-default unservice">获取验证码</button>
+
+   </div>
+
+   <div class="top_below2 " >
+     <div class="service text_30pxstrong">验证码</div>    
+     <div class="unservice">
+      <input type="text" class="form-control " style="width:7rem;font-size:0.4rem;height: 1.733333rem; border:none;" placeholder="请输入验证码" >
+     </div>
+   </div>
+
+</div>
+
+<div class="btn-distance">
+<button type="button" class=" btn btn-primary btn-lg btn-block" style="margin:0 0.266667rem;height: 1.333333rem;margin-top:0.4rem;">验证信息</button>
+</div>
+<!--表单填写 end -->
+
+
+</div>
+
+
+ <script type="text/javascript">
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	let htmlDon=document.getElementsByTagName("html")[0];
+		htmlDon.style.fontSize=htmlWidth/10 + "px";
+ </script>
+</body>
+</html>

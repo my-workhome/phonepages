@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1,minimun-scale=1,user-scalable=no">
+	<title>选择银行卡</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/wk_all.css">
+
+
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	
+</head>
+<body class="gray_bg">
+
+	<div class="gray_gbdiv "></div>
+  <div class="white_bg">
+   <div class="tx_box1">
+ 	   <div class="service text_black_24px">到账银行卡
+ 	   </div>    
+ 	   <div>
+      <span class="text_blue_24px">建设银行储蓄卡（9798)</span>
+      <img class="service unservice" style="width:0.226667rem; height: 0.373333rem;" src="../img/arrow_2.png" alt="">
+ 	   </div>
+   </div>
+<div class="gray_gbdiv "></div>
+  <div class="tx_box2 font_size_24gray" >
+    <!-- 第一行 -->
+     <div class="col_flex_center" style="height: 1.386667rem;">提现金额
+     </div> 
+     <!-- 第二行    -->
+     <div class="cash_num" >
+        <span class="cash_num_mon">¥</span>
+        <input class="cash_num_input service" type="text" placeholder="|" >
+     </div>
+     <hr class="hr_all mar_top_30px" color="#ccc" >
+     <!-- 第三行 -->
+     <div class="cash_num space_btw">
+        <span>当前可提现余额 <span>¥556.00</span>&nbsp;&nbsp;元</span>
+        <span class="text_red_24px">全部提现</span>
+     </div>
+   </div>
+</div>
+<div style="text-align: center;">
+    <button class="tx_next_btn mar_top_50px text_white_30px">下一步</button>
+</div>
+<div>
+<!-- 灰色背景层 -->
+ <div class="xzdz_gray" style="opacity: 0.5;"></div>
+ <!-- 操作主体 -->
+<div class="bank_cards">
+  <div class=" choise_bank_cards_title">
+    <span></span>
+    <span class="text_black_30px">选择银行卡</span>
+    <span>
+      <img class="img-responsive img_size " src="../img/icon_3.png" alt=""/>
+    </span>
+  </div>
+  <div class=" choise_bank_cards_title">
+    <span>
+      <span><img class="img_size " src="../img/icon_3.png" alt=""/>
+      </span>
+      <span class="text_black_24px service">中国建设银行卡（9798）</span>
+    </span>
+    <span>
+      <img class="img-responsive img_size" src="../img/icon_3.png" alt=""/>
+    </span>
+  </div>
+  <div class=" choise_bank_cards_title">
+    <span >
+      <span><img class=" img_size " src="../img/icon_3.png" alt=""/>
+      </span>
+    <span class="text_black_24px service">添加银行卡</span>
+    </span>
+    
+  </div>
+</div>
+</div>
+ <script type="text/javascript">
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	let htmlDon=document.getElementsByTagName("html")[0];
+		htmlDon.style.fontSize=htmlWidth/10 + "px";
+ </script>
+</body>
+</html>

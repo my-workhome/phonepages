@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1,minimun-scale=1,user-scalable=no">
+	<title>验证银行卡信息</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/wk_all.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script>
+		$(function () {
+			$("#question").click(function () {
+				$(".gray_div").css("display","block");
+				$(".bank_question").css("display","block");
+			});	
+			$("#i_konw").click(function () {
+				$(".bank_question").css("display","none");
+				$(".gray_div").css("display","none");
+			});
+			$("#user_agreement").click(function () {
+				if($(this).attr("value")==0){
+				$(this).css("background-color","#4DB4FF");
+				$(this).attr("value","1")
+				}
+				else
+				{
+					$(this).css("background-color","");
+				$(this).attr("value","0");
+				}
+			});
+			$("#next").click(function () {
+				if($("#user_agreement").attr("value")==1){
+				window.location.href="../pages/银行卡.html"
+			}
+			});
+		});
+	</script>
+	
+</head> <body class="gray_bg">
+	<!-- 验证银行卡信息 -->
+<div class="bankCard" style="display: none;"> 
+<div class="gray_gbdiv"></div>
+  <div class="text_black_30px" id="sure_bank_card">
+	<div class="set_name space_btw">
+		<span class="span_width_120px strong">银行</span>
+		<span class="span_width_120px strong">建设银行</span>
+		<span class="unservice_40px">
+		</span>
+	</div>
+	<div class="set_name space_btw">
+		<span>
+			<span class="span_width_120px strong">卡类型</span>
+			<span class="span_width_120px strong">储蓄卡</span>
+		</span>
+		<span class="unservice_40px">
+		</span>
+	</div>
+	<div class="gray_gbdiv"></div>
+	<div class="set_name space_btw">
+		<span>
+			<span class="span_width_120px strong">手机号</span>
+			<input type="text" placeholder="请输入银行预留手机号">
+		</span>
+		<span id="question" class="unservice_40px">
+			<img class="img_size_50px" src="../img/icon_25.png">
+		</span>
+	</div>
+	<div class="user_agreement_box" >
+		<input  type="checkbox" value="0" class="div_size40px " id="user_agreement"> 
+		<div class="text_blank_24px service_20px">同意</div>
+		<div class=""><a href="../pages/用户协议.html">《用户服务协议》</a></div>
+	</div>
+	<div class="mar_top_40px" style="text-align: center;">
+		<button id="next" class="img-rounded bankcard_next_btn text_white_24px">下一步</button>
+	</div>
+<!-- 疑问提示框start -->
+<!-- 灰色遮挡层 -->
+	<div class="gray_div" style="display: none;"></div>
+<!-- 弹出显示框 -->
+ 	<div class="bank_question" style="display: none;">
+  		<div class="text_black_30px error_number_bank_phone">手机号 </div>
+    	<div class="error_number_bank_qus text_gray_30px">
+    银行预留手机号是在银行办卡时填写的手机号，若遗忘、换号可联系银行客服电话处理
+    	</div>
+    	<div id="i_konw" class="error_number_bank_under text_blue_30px">知道了</div>
+  </div>
+  <!-- 疑问提示框end -->
+  </div> 
+</div> 
+
+ <script type="text/javascript">
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	let htmlDon=document.getElementsByTagName("html")[0];
+		htmlDon.style.fontSize=htmlWidth/10 + "px";
+ </script>
+</body>
+</html>

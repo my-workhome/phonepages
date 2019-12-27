@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1,minimun-scale=1,user-scalable=no">
+	<title>购物车</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/wk_all.css">
+
+
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script>
+      $(function () {
+        // 数量加
+         $(".add").click(function () {
+            var num=parseInt($(this).prev().val())+1;
+           $(this).prev().val(num);
+          });
+          // 数量减
+          $(".reduce").click(function () {
+            var num=parseInt($(this).next().val())-1;
+           $(this).next().val(num);
+          });
+
+          $(".buy_car_box2").on("click",".goods_checkbox",function () {
+            if ($(this).attr("value")==1) {
+            $(this).attr("value","0");
+            $(this).removeClass('circle_btn').addClass('circle_btn_unchoise');
+              $(this).children().hide(); 
+              }
+              else{
+                 $(this).attr("value","1");
+                $(this).removeClass('circle_btn_unchoise').addClass(' circle_btn');
+              $(this).children().show(); 
+              }
+          });
+// 全选按钮
+          $(".all_checkbox").click(function () {
+            if ($(this).attr("value")==1) {
+            $(this).attr("value","0");
+                 $(".choise").removeClass('circle_btn').addClass('circle_btn_unchoise').children().hide(); 
+              }
+              else{
+                 $(this).attr("value","1");
+                 $(".choise").removeClass('circle_btn_unchoise').addClass('circle_btn').children().show(); 
+              }
+
+          });
+            
+       
+        });
+  </script>
+</head>
+<body class="gray_bg">
+	<div class="gray_gbdiv"></div>
+  <div class="white_bg buy_car" >
+    <div class="div_size100px buy_car_box1"> 
+    	<div class="text_black_24px ">编辑</div>
+    	<img class="img-responsive img_size29_33 service_20px" src="../img/icon_15.png" alt=""/>
+    </div>
+	<!-- 主体 -->
+  	<div class="buy_car_box2" style="border-bottom:#DBDBDB 1px solid;">
+  		<!-- 左边按钮 -->
+  		<div class="car_box2_left">
+  			<div class="circle_div " style="width:1.6rem;">
+			  <div class="circle_btn choise btn goods_checkbox" value="1">
+				<div class="circle_btn_heart "></div>
+			</div>
+		</div>
+  		</div>
+  		<!-- 右边商品 -->
+  		<div class="car_box2_right">
+  	      <div class="car_box2_right_css">
+     <!-- 商品图片 -->
+          <div class="">
+             <img class="img-responsive goods_img_car" src="../img/mallpic.png"  alt="">
+          </div> 
+        <!-- 商品描述部分 -->
+         <div class="car_box2_right_css_text">
+            <div class="font_size_24black">全自动引擎清洗
+            </div>
+            <div class="text_red_30px">¥ 600.00</div>
+            <div class="buy_car_add">
+        <input type="button" value="-" class="btn text_black_36px reduce"><input type="text" value="1" class="btn font_size_24black num"><input type="button" value="+" class="add btn text_black_36px">
+            </div>
+         </div> 
+       </div>
+  		</div>
+  	</div>
+  	<div class="buy_car_box2" style="border-bottom:#DBDBDB 1px solid;">
+  		<!-- 左边按钮 -->
+  		<div class="car_box2_left">
+  			<div class="circle_div " style="width:1.6rem;">
+			  <div class="circle_btn choise btn goods_checkbox" value="1">
+				<div class="circle_btn_heart "></div>
+			</div>
+		</div>
+  		</div>
+  		<!-- 右边商品 -->
+  		<div class="car_box2_right">
+  	      <div class="car_box2_right_css">
+     <!-- 商品图片 -->
+          <div class="">
+             <img class="img-responsive goods_img_car" src="../img/mallpic.png"  alt="">
+          </div> 
+        <!-- 商品描述部分 -->
+         <div class="car_box2_right_css_text">
+            <div class="font_size_24black">全自动引擎清洗
+            </div>
+            <div class="text_red_30px">¥ 600.00</div>
+            <div class="buy_car_add">
+        <input type="button" value="-" class="btn text_black_36px reduce"><input type="text" value="1" class="btn font_size_24black num"><input type="button" value="+" class="add btn text_black_36px">
+            </div>
+         </div> 
+       </div>
+  		</div>
+  	</div>
+  	<div class="buy_car_box2" style="border-bottom:#DBDBDB 1px solid;">
+  		<!-- 左边按钮 -->
+  		<div class="car_box2_left">
+  			<div class="circle_div " style="width:1.6rem;">
+			  <div class="circle_btn choise btn goods_checkbox"" value="1">
+				<div class="circle_btn_heart "></div>
+			</div>
+		</div>
+  		</div>
+  		<!-- 右边商品 -->
+  		<div class="car_box2_right">
+  	      <div class="car_box2_right_css">
+     <!-- 商品图片 -->
+          <div class="">
+             <img class="img-responsive goods_img_car" src="../img/mallpic.png"  alt="">
+          </div> 
+        <!-- 商品描述部分 -->
+         <div class="car_box2_right_css_text">
+            <div class="font_size_24black">全自动引擎清洗
+            </div>
+            <div class="text_red_30px">¥ 600.00</div>
+            <div class="buy_car_add">
+				<input type="button" value="-" class="btn text_black_36px reduce"><input type="text" value="1" class="btn font_size_24black num"><input type="button" value="+" class="add btn text_black_36px">
+            </div>
+         </div> 
+       </div>
+  		</div>
+  	</div>
+  </div>
+   <div class="inline_xq_foot white_bg">
+          <div class="all_chose">
+          	<div class="circle_btn choise btn all_checkbox" value="1">
+				<div class="circle_btn_heart "></div>
+			</div><span class="text_black_30px service_20px">全选</span>
+		   </div>
+      
+      <div class="text_black_30px" style="width:3.4rem;">
+      <div><span>总计:</span><span class="text_red_30px">¥1200.00</span></div>
+      <div class="font_size_20gray">不含运费</div>
+     </div>
+      <div class=" text_white_30px " style="width:3.4rem;">
+      <button class="xq_btn red_btn" >去结算（2）
+
+</button>
+      </div>
+    </div>
+ </div>
+
+
+
+
+ <script type="text/javascript">
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	let htmlDon=document.getElementsByTagName("html")[0];
+		htmlDon.style.fontSize=htmlWidth/10 + "px";
+ </script>
+ <script type="text/javascript">
+ 
+ </script>
+</body>
+</html>

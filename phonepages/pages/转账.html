@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1,minimun-scale=1,user-scalable=no">
+	<title>转账</title>
+<link rel="stylesheet" href="../css/	bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/wk_all.css">
+<link rel="stylesheet" type="text/css" href="../css/yqh_all.css">
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#immediateTransfer").click(function () {
+			$("#transferInformation").css("display","none");
+			$("#input_password_all").css("display","block");
+		});
+	});
+</script>
+<script type="text/javascript">
+	$(function () {
+		let password=$(".input_password_box input");
+        let times=0;
+        $(password).val("");  
+        times=0;
+		$("#t-keyvalue td").click(function () {
+        	if($(this).attr("value")=="."){
+        		let passwords=[];
+          		for(var i=0;i < password.length;i++){
+          			passwords.push(password.eq(i).val());
+          		}
+          		$("#payPwd").val(passwords.join(""));
+          		window.location.href="../pages/成功提示.html"
+			}
+           		else if($(this).attr("value")=="no"){
+           		}
+          // 删除
+          			else if($(this).attr("value")=="del"){
+
+            			if (times>=0) {
+              				$(password[times-1]).val("");
+              				times=times-1;
+             				if(times<0){times=0;}
+            			}
+          			}
+          // 内容输入
+        		else{
+            		if(times<=5){ 
+            			$(password[times]).val($(this).attr("value"));
+           				 times=times+1;
+         			}  
+        		}
+       	});
+	});
+</script>
+</head>
+<body class="gray_bg">	
+<!-- 转账填写信息 start -->
+<div id="transferInformation">
+<div class="white_bg">
+  	<div class="gray_gbdiv "></div>
+  	<div id="set_password_pages">
+  		<div class="top_below2 " style="border-bottom: #ececec 1px solid;">
+     		<div class="service text_30pxstrong">用户姓名</div>
+     		<div class="unservice text_30px">
+      			<input type="password" class="form-control" style="width:7rem" placeholder="请输入对方真实姓名">
+    		 </div>
+   		</div>
+   		<div class="top_below2 " style="border-bottom: #ececec 1px solid;">
+    		<div class="service text_30pxstrong">用户账号</div>    
+     		<div class="unservice">
+    			<input type="password" class="form-control" style="width:7rem" placeholder="请输入对方钱包账号">
+    		</div>
+		</div>
+    	<div class="top_below2 " style="border-bottom: #ececec 1px solid;">
+     		<div  class="service text_30pxstrong">转账金额</div>    
+     		<div class="unservice">
+      			<input type="password" class="form-control" style="width:7rem" placeholder="请输入转账金额" >
+    		</div>
+		</div>
+	</div>
+</div>
+<div class="btn-distance">
+	<button id="immediateTransfer" type="button" class="btn btn-primary btn-lg btn-block" style="margin:0 0.266667rem;font-size: 0.4rem;height: 1.2rem; background-color: #01a9f0">立即转账</button>
+</div>
+</div>
+<!-- 转账填写信息 end -->
+<!-- 输入支付密码start -->
+<div id="input_password_all" class="gray_bg" style="display: none;"> 
+	<input type="text" id="payPwd" name="" value="" style="display:none" >
+	<div class="input_password mar_top_200px">
+		<div class="text_black_30px">请输入支付密码</div>
+		<div class="input_password_box mar_top_40px">
+			<input type="password" value=""><input type="password" value=""><input type="password" value=""><input type="password" value=""><input type="password" value=""><input style="border-right:#ccc 1px solid;" type="password" value="">
+		</div>
+	</div>
+<!-- 支付密码键盘 -->
+<div id="t-keybord">
+  	<table id="t-keyvalue" class="keyboard" cellspacing="0" cellpadding="0">
+		<tr>
+			<td value="no" colspan="3">安全输入键盘</td>
+		</tr>
+    	<tr>
+      		<td value="1">1</td>
+      		<td value="2">2</td>
+      		<td value="3">3</td>
+    	</tr>
+    	<tr>
+      		<td value="4">4</td>
+      		<td value="5">5</td>
+      		<td value="6">6</td>
+    	</tr>
+   		<tr>
+      		<td value="7">7</td>
+      		<td value="8">8</td>
+      		<td value="9">9</td>
+    	</tr>
+    	<tr>
+    		<td value=".">确定</td>
+      		<td value="0">0</td>
+      		<td value="del">删除</td>
+    	</tr>
+	</table>
+</div>
+</div> 
+<!-- 输入支付密码end -->
+ <script type="text/javascript">
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	let htmlDon=document.getElementsByTagName("html")[0];
+		htmlDon.style.fontSize=htmlWidth/10 + "px";
+ </script>
+</body>
+</html>

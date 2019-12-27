@@ -1,0 +1,1972 @@
+*{
+	margin: 0px;
+	padding: 0px;   
+}
+
+/*主体宽度*/
+.contarner{
+	width: 10.0rem;
+	height:17.786667rem;
+	
+}
+/*头部背景和大小*/
+.head{
+
+	width: 10.0rem;
+	height: 5.466667rem;
+	background:url(../img/contentbg.png);
+	background-repeat: no-repeat;
+    
+     background-size: cover;
+}
+/*账户余额字体位置*/
+.balance_location{
+	line-height: 0.4rem;
+	padding-top: 0.866667rem;
+	padding-left: 1.066667rem;
+}
+/*账户余额金额位置*/
+.balance{
+	line-height: 1.2rem;
+	padding-top:0.4rem;
+padding-left:1.026667rem;
+padding-bottom:0.533333rem;
+}
+
+.text_green_30px{
+	font-size: 0.4rem;
+	color: #8BC34A;
+}
+
+/*白色30像素字体*/
+.text_white_30px{
+	font-size: 0.4rem;
+	color: #fff;
+}
+
+/*黑色30像素字体*/
+.text_black_30px{
+	font-size: 0.4rem;
+	color: #323232;
+}
+
+/*灰色30像素字体*/
+.text_gray_30px{
+	font-size: 0.4rem;
+	color: #999999;}
+.text_30px{
+font-size:0.4rem;
+line-height: 0.4rem;
+}
+.text_30pxstrong{
+	font-size:0.4rem;
+line-height: 0.4rem;
+	font-weight: bolder;
+}
+
+/*白色90像素字体*/
+.text_white_90px{
+	font-size: 1.2rem;
+	color: #fff;
+	line-height: 1.2rem;
+}
+.text_white_24px{
+	font-size: 0.32rem;
+	line-height: 0.32rem;
+	color: #fff;
+}
+
+/*账户查询按钮*/
+.head .btn_white{
+	margin-left:0.973333rem;
+	width: 2.933333rem;
+	height:0.933333rem;
+	
+    font-size: 0.4rem;
+    border-radius: 0.666667rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+/*通知公告主体*/
+.notice{
+	
+	height:1.333333rem;
+	background-color: #fff;
+	line-height: 0.4rem;
+	display: flex;
+	align-items: center;
+
+	
+}
+.notice div{
+	display: inline-block;
+}
+
+
+.loundspeaker_img{
+	
+	}
+	.notice_text{
+	margin-right: 0.626667rem;
+}
+/*灰色背景条*/
+.gray_gbdiv{
+	border-bottom: #ececec 1px solid;
+	border-top: #ececec 1px solid;
+	height:0.266667rem;
+	background-color: #ececec;
+}
+.white_gbdiv{
+	border-top: #ececec 1px solid;
+	border-bottom: #cccccc 1px solid;
+	height: 0.466667rem;
+	background-color: #fff;
+}
+.foot{
+	
+	height: 1.333333rem;
+	border-bottom: #dbdbdb 1px solid;
+	display: flex;
+	align-items: center;
+}
+.service{
+	line-height: 0.4rem;
+	margin-left: 0.4rem;
+}
+.unservice{
+	margin-right: 0.4rem;
+}
+/*左边距20px*/
+.service_20px{
+	margin-left: 0.266667rem;
+}
+/*左边距40px*/
+.service_40px{
+	margin-left: 0.533333rem;
+}
+/*右边距40px*/
+.unservice_40px{
+	margin-right: 0.533333rem;
+}
+/*左边距10px*/
+.service_10px{
+	margin-left: 0.133333rem;
+}
+/*右边距20px*/
+.unservice_20px{
+	margin-right: 0.266667rem;
+}
+.mall{
+	align-items: center;
+	width: 10.0rem;
+	height:3.333333rem;
+}
+
+.text_blue{
+	color: #00a9ef;
+	font-size: 0.32rem;
+	line-height: 0.32rem;
+	margin-left: 1.013333rem;
+}
+/*蓝色36字体*/
+.text_blue_36px{
+	color: #66BEFF;
+	font-size: 0.48rem;
+	line-height: 0.48rem;
+}
+/*添加银行卡按钮*/
+.add_bank_cards_btn{
+	background-color: white;
+	height: 1.333333rem;
+	width: 9.2rem;
+	border:none;
+}
+.notice1{
+	
+	height:1.333333rem;
+	width: 10.0rem;
+	line-height: 0.4rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: #0091cd;
+}
+.notice1 div{
+	display: inline-block;
+}
+/*钱包管理，头部下部分*/
+.top_below{
+	height: 4.133333rem;
+	width: 10.0rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.top_below div{display: inline-block;}
+/*钱包字体居中对齐*/
+.btn_qianb_position
+{     line-height: 0.4rem;
+	font-size:0.4rem;
+	
+	width: 2.8rem;
+	height:0.933333rem;
+	color: white;
+	background-color: #28d4ff;
+	border-top-left-radius: 0.4rem;
+	border-bottom-left-radius: 0.4rem;
+    padding:0px;
+display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/*钱包管理按钮*/
+.btn_qianb {
+	
+	
+	
+	
+}
+.money_num{
+	width: 3.866667rem;
+	height: 1.733333rem;
+	display: flex;
+	flex-flow: column;
+
+}
+/*钱包管理的地步三个控件*/
+.top_below1{
+	height: 1.333333rem;
+	width: 10.0rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+/*行高30px*/
+.line_height_10{
+	line-height: 0.4rem;
+}
+/*白色背景*/
+.white_bg{
+	background-color: white;
+}
+/*灰色背景*/
+.gray_bg{
+	background-color: #ececec;
+}
+.botton_btn{
+	height: 6.0rem;
+	width: 10.0rem;
+	font-size: 0.32rem;
+	line-height: 0.32rem;
+	color: #00a9ef;
+	display: flex;
+	align-items: center;
+	flex-direction: column-reverse;
+    padding-bottom: 0.8rem;
+}
+
+.top_below2{
+
+	height: 1.733333rem;
+	width: 10.0rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+/*提现，银行卡栏*/
+.tx_box1{
+
+	height: 1.6rem;
+	width: 10.0rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: #ccc 1px solid;
+}
+
+/*提现第二部分内容*/
+.tx_box2{
+
+	height: 4.533333rem;
+	width: 10.0rem;
+	padding-left: 0.4rem;
+	padding-right: 0.4rem;
+	border-bottom: #ececec 1px solid;
+}
+/*375*667样式*/
+
+.line_sall_top{
+	padding:0.0rem;
+	width:10.0rem;
+	height:1.333333rem;
+	font-size:0.4rem;
+    line-height: 1.333333rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: #ececec 1px solid;
+  }
+  .line_sall_top div{
+  	width: 3.333333rem;
+  	text-align: center;
+  	height: 1.333333rem;
+
+  }
+  .text_sall_firstbtn{
+  	color: #00a9ef;
+  	border-bottom: #00a9ef 1px solid;
+  }
+  .text_sall_nexybtn{
+  	color: #8c8c8c;
+  }
+
+  /*账单明细*/
+  /*红色字体*/
+  .text_bill_firstbtn{
+  	color: #E51C23;
+  	border-bottom: #E51C23 1px solid;
+  }
+  .text_bill_nexybtn{
+  	color: #3B3B3B;
+  }
+
+  /*在线商城内容*/
+  .inlube_body_box1{
+  	height: 4.2rem;
+  	width: 10.0rem;
+  	padding:0.4rem;
+  	display: flex;
+  	border-bottom: #dfdfdf 1px solid;
+
+  }
+ 
+  /*商品图片大小*/
+.goods_img{
+	height: 3.333333rem;
+	width: 3.333333rem;
+	border: #dfdfdf 1px solid;
+}
+/*商品描述主体*/
+.goods_describe{
+	height:3.333333rem;
+	width: 5.533333rem;
+	margin-left: 0.4rem;
+}
+.goods_describe_top{
+	width: 5.533333rem;
+	height: 2.333333rem;
+}
+/*黑色24px字体*/
+.font_size_24black{
+font-size:0.32rem;
+color: #000000;
+line-height:0.32rem;
+}
+/*红色36px加粗字体*/
+.font_size_36black{
+	font-size: 0.48rem;
+	font-weight: bolder;
+	color: #ff3333;
+	line-height:0.48rem;
+}
+/*白色36px字体加粗*/
+.font_size_36white_strong{
+	font-size: 0.48rem;
+	font-weight: bolder;
+	color: white;
+	line-height:0.48rem;
+}
+/*上外边距10px*/
+.mar_top_10px{
+	margin-top: 0.133333rem;
+}
+/*上外边距20px*/
+.mar_top_20px{
+	margin-top: 0.266667rem;
+}
+/*上外边距30px*/
+.mar_top_30px{
+	margin-top: 0.4rem;
+}
+/*上外边距60px*/
+.mar_top_60px{
+	margin-top:0.8rem;
+}
+/*上外边距160px*/
+.mar_top_160px{
+	margin-top: 2.133333rem;
+}
+/*上外边距250px*/
+.mar_top_250px{
+	margin-top: 3.333333rem;
+}
+/*上外边距200px*/
+.mar_top_200px{
+	margin-top: 2.666667rem;
+}
+/*上外边距40px*/
+.mar_top_40px{
+	margin-top: 0.533333rem;
+}
+/*上外边距50px*/
+.mar_top_50px{
+	margin-top: 0.666667rem;
+}
+
+/*商品已售和购买*/
+.goods_describe_foot{
+	display: flex;
+	align-items: flex-end;
+	width: width: 5.533333rem;
+	height: 0.866667rem;
+	justify-content: space-between;
+    
+
+}
+
+
+/*24px灰色字体*/
+.font_size_24gray{
+font-size:0.32rem;
+line-height:0.32rem;
+color: #999999;
+}
+/*28px灰色字体*/
+.font_size_28gray{
+font-size:0.373333rem;
+line-height:0.373333rem;
+color: #999999;
+}
+.font_size_24gray6{
+font-size:0.32rem;
+line-height:0.32rem;
+color: #666666;
+}
+/*白色30px，无行高*/
+.text_30px_white{
+font-size:0.4rem;
+line-height: 0.4rem;
+color: white;
+}
+/*下外边距10px*/
+.rel_sell{
+	margin-bottom: 0.133333rem;
+}
+/*购买按钮*/
+.btn_buy{
+	width:2.4rem;
+	height: 0.933333rem;
+	
+	margin-bottom: 0.066667rem;
+	background-color: #00a9ef;
+
+	/*商品已售和购买*/
+
+	display: flex;
+	align-items: center;
+	
+	height: 0.866667rem;
+	justify-content: center;
+    
+
+
+}
+/*在线商城底部*/
+.inline_mall_foot{
+	position: fixed;
+	bottom: 0.0rem;
+	z-index: 1;
+	width: 10.0rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    height: 1.6rem;
+    padding-bottom:0.333333rem;
+    padding-top:0.333333rem;
+}
+/*宽高为40的div*/
+.div_size40px{
+	width: 0.533333rem;
+	height: 0.533333rem;
+}
+/*验证银行卡信息—用户协议*/
+#sure_bank_card #user_agreement{
+    width: 0.533333rem;
+	height: 0.533333rem;
+	-webkit-appearance:none;
+	background-color: #fff;
+	margin-top:0.0rem;
+	
+
+}
+/*高度为100的div*/
+.div_size100px{
+	width: 10.0rem;
+	height: 1.333333rem;
+}
+
+/*宽高为宽度100的div*/
+.div_size120px{
+	text-align: center;
+	width: 1.6rem;
+	height: 1.6rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-right: #ddd 1px solid;
+	
+}
+/*宽度为150的div*/
+.div_size150px{
+	width: 2.0rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+/*黑色24px字体*/
+.text_black_24px{
+	color: black;
+	font-size: 0.32rem;
+}
+/*蓝色24字体*/
+	
+.text_blue_24px{
+	font-size: 0.32rem;
+	color:#006ECC;
+    }
+    /*蓝色20字体*/
+	
+.text_blue_20px{
+	font-size: 0.266667rem;
+	line-height: 0.266667rem;
+	color: #5295FD;
+    }
+/*蓝色30字体*/
+	
+.text_blue_30px{
+	font-size: 0.4rem;
+	color:#006ECC;
+    }
+
+/*红色24px字体*/
+.text_red_24px{
+	font-size: 0.32rem;
+	color: #E51C23;
+}
+/*红色30px字体*/
+.text_red_30px{
+	font-size:0.4rem;
+	color: #E51C23;
+}
+/*红色50px字体*/
+.text_red_50px{
+	font-size:0.666667rem;
+	color: #E51C23;
+}
+
+/*订单管理页面时间*/
+.order_time{
+	padding:0.0rem;
+	width:10.0rem;
+	height:1.333333rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: #ececec 1px solid;
+
+  }
+
+  .goods_order{
+	height:3.333333rem;
+	width: 5.533333rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.gray_bgdiv_border{
+	border-bottom: #B0B0B0 1px solid;
+	border-top: #B0B0B0 1px solid;
+	height:0.266667rem;
+	background-color: #ececec;
+}
+.order_puy_top{
+	background-color:#0AD75C;
+	width: 10.0rem;
+	height: 2.666667rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left:0.8rem;
+}
+/*白色31PX字体，下边距20px*/
+.text_white_60px_margin_botton20{
+	font-size: 0.413333rem;
+	color: white;
+	margin-bottom: 0.266667rem;
+}
+/*灰色24px字体*/
+.text_green_24px{
+	color: #666666;
+	font-size: 0.32rem;
+	line-height:0.32rem;
+	
+}
+/*配送地址*/
+/*水平对齐*/
+.distribution{
+	display: flex;
+}
+.distribution_addr{
+height: 3.333333rem;
+width: auto;
+padding:0.4rem;
+}
+/*下边距为20px*/
+.margin_botton20px{
+	margin-bottom:0.266667rem;
+}
+.order_mannege_top{
+	margin-top:0.4rem;
+}
+
+.font_size_20gray{
+	font-size:0.266667rem;
+	line-height: 0.266667rem;
+    color: #999999;
+}
+.font_size_20white{
+	font-size:0.266667rem;
+	line-height: 0.266667rem;
+    color: #fff;
+}
+/*两边对齐*/
+.space_btw{
+	display: flex;
+	justify-content: space-between;
+}
+
+/*竖直排列*/
+.col_flex{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/*左边竖直居中*/
+.col_flex_center{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
+}
+.col_flex_center_pj{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;	
+	align-items: center;
+	padding-top: 0.266667rem;
+	height: 3.6rem;
+}
+.hr{
+	padding:0.0rem;
+	margin:0.0rem;
+	margin-left:0.4rem;
+	margin-right:0.4rem;
+	color: #ccc;
+}
+/*满屏长度HR*/
+.hr_all{
+	padding:0.0rem;
+	margin:0.0rem;
+	margin-top: 0.4rem;
+	color: #ccc;
+}
+/*订单详情订单栏底部*/
+.order_mannege_foot{
+   padding:0.4rem;
+}
+/*商品分类，左边*/
+.goods_category_left{
+	width: 2.933333rem;
+	height: auto;
+
+}
+/*按钮高80px*/
+.height_80px{
+	height: 1.066667rem;
+}
+/*商品分类，又边*/
+.goods_category_right{
+	width: 7.066667rem;
+	height:-webkit-fill-available;
+	padding-top:0.8rem;
+	padding-left:0.4rem;
+	padding-right:0.4rem;
+
+}
+.height_width_200px{
+	height: 2.666667rem;
+	width: 2.666667rem;
+	border:solid 0.013333rem #999999;
+}
+.height_100px{
+	margin:0.4rem;
+	height:1.333333rem;
+}
+.rq_order{
+	position: absolute;
+	top: 0.0rem;
+	left: 0.0rem;
+	width: 10.0rem;
+	height: 100%;
+	background-color:#000;
+	z-index: 2;
+	opacity: 0.7;
+}
+.rq_order_form{
+	position: absolute;
+	bottom: 0.0rem;
+	left: 0.0rem;
+	width:10.0rem;
+	height: 6.666667rem;
+	padding:0.4rem;
+	background-color: white;
+	z-index: 3;
+	opacity: 1;
+
+}
+.rq_order_form_img_price{
+	padding-bottom:0.4rem;
+	border-bottom:#ececec 1px solid;
+}
+.rq_order_form_img{
+	margin-top:-1.333333rem;
+}
+.rq_order_form_price{
+	width: 5.466667rem;
+	text-align: left;
+	margin-left:0.4rem;
+}
+.buy_num{
+	height: 1.333333rem;
+	display: flex;
+	align-items: center;
+	border-bottom:#ececec 1px solid;
+}
+.set_buy_num input{
+	width: 1.333333rem;
+	border:#ececec 1px solid;
+	background-color: white;
+}
+/*黑色36px字体*/
+.text_black_36px{
+	font-size:0.48rem;
+	line-height:0.48rem;
+	color: black;
+}
+/*黑色40px字体*/
+.text_black_40px{
+	
+	font-size:0.533333rem;
+	line-height:0.533333rem;
+	color: black;
+}
+
+/*绿色40px字体*/
+.text_green_40px{
+	font-size:0.533333rem;
+	line-height:0.533333rem;
+	color: #8BC34A;
+}
+/*灰色36px字体*/
+.text_gray_36px{
+	font-size:0.48rem;
+	line-height:0.48rem;
+	color: #c3c3c3;
+}
+
+/*黑色36px字体*/
+.text_red_36px{
+	font-size:0.48rem;
+	line-height:0.48rem;
+	color: red;
+	font-weight: bolder;
+}
+.text_red_36px_unstrong{
+	font-size:0.48rem;
+	line-height:0.48rem;
+	color: red;
+}
+
+.text_black_36line_h{
+   line-height:0.48rem;
+   font-size:0.4rem;
+	color: black;
+}
+.red_btn{
+	background-color: #E51C23;
+}
+.green_btn{
+	background-color: #00D053;
+}
+.buy_btn{
+	display: flex;
+	height:2.0rem;
+	align-items: center;
+}
+.buy_btn input{
+	width: 4.266667rem;
+}
+
+/*轮播图样式*/
+@charset "utf-8";
+/* banner */
+.c-banner{
+	width: 100%;
+	height: 6.133333rem;
+	position: relative;
+}
+.c-banner img{
+	width: 100%;
+}
+.c-banner .banner ul{
+
+	list-style: none;
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+.c-banner .banner ul li{
+	width: 100%;
+	height: 6.133333rem;
+	position: absolute;
+	display: none;
+	opacity: 0;
+}
+.c-banner .banner ul li:nth-child(1){
+	opacity: 1;
+	display: block;
+}
+.c-banner .banner ul li img{
+	width: 100%;
+	position: absolute;
+	top: 0px;
+}
+.c-banner .banner ul li:first-child img{
+	position: relative;
+}
+.c-banner .nexImg,.c-banner .preImg{
+	padding: 25px 10px 25px 10px;
+	position: absolute;
+	top: 50%;
+	margin-top: -53px;
+	background: #000000;
+	opacity: 0.5;
+	border-radius: 5px;
+	z-index: 10;
+	
+}
+.c-banner .nexImg:hover,.c-banner .preImg:hover{
+	opacity: 0.8;
+}
+.c-banner .nexImg{
+	right: 0px;
+}
+.c-banner .nexImg img,.c-banner .preImg img{
+	
+	
+}
+.c-banner .jumpBtn{
+	width: 100%;
+	position: absolute;
+	bottom: 0.266667rem;
+	text-align: center;
+}
+.c-banner .jumpBtn ul{
+	margin-bottom: 0px;
+	padding: 0px;
+}
+
+.c-banner .jumpBtn ul li{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: white;
+	opacity: 0.9;
+	margin-left: 10px;
+}
+.c-banner .jumpBtn ul li:first-child{
+	margin-left: 0px;
+}
+
+/*商品详情商品名称栏*/
+.xq_box2{
+	height: 2.666667rem;
+	padding:0.4rem;
+	width:10.0rem;
+}
+/*高度100px*/
+.xq_goods_describe{
+	width: 2.666667rem;
+	line-height: 1.333333rem;
+	border-bottom: red 1px solid;
+	text-align: center;
+}
+.inline_xq_foot{
+	position: fixed;
+	bottom: 0.0rem;
+	z-index: 1;
+	width: 10.0rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;;
+    height: 1.6rem;
+}
+/*订单详情按钮*/
+.xq_btn{
+	height: 1.6rem;
+	width: 3.4rem;
+}
+/*提交订单头部按钮*/
+/*btn*240*60*/
+.btn_240_60{
+	height: 0.8rem;
+	width: 3.2rem;
+	background-color: white;
+}
+/*灰色边框*/
+.gray_border{
+border: #BBBBBB 1px solid;
+}
+/*红色边框*/
+.red_border{
+border: #E51C23 1px solid;
+}
+/*订单详情头部，配送方式*/
+.send_way{
+height: auto;
+width: auto;
+width: auto;
+padding:0.4rem;
+}
+.tj_box1_left{
+width: 8.4rem;
+}
+.tj_box1_right{
+	height: auto;
+	width:0.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*提交订单第一个box下半*/
+.tj_box1{
+	padding:0.4rem;
+	height: 2.4rem;
+}
+ .tj_box2_r{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.tj_box2{
+  	height: 5.733333rem;
+  	width: 10.0rem;
+  	padding:0.4rem;
+  	display: flex;
+  }
+  .tj_box1_botton{
+  	width:10.0rem;
+  	padding:0.4rem;
+  	display: inline-flex;
+	align-items: center;
+	justify-content:flex-end;
+  }
+  .tj_box1_botton span{
+  	display: inline-block;
+  }
+  /*提交商品价格*/
+  .tj_goods_price{
+  	height: 2.266667rem;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: space-around;
+  }
+
+  .actual_pay{
+  	width:6.666667rem;
+  	height: 1.6rem;
+  	display: inline-flex;
+	align-items: center;
+	justify-content:flex-end;
+  }
+  .img_size{
+  	height:0.4rem;
+  	width:0.4rem;
+  }
+ .img_size_50px{
+  	height:0.666667rem;
+  	width:0.666667rem;
+  }
+  .img_size_250px{
+  	height:3.333333rem;
+  	width:3.333333rem;
+  }
+
+  /*订单支付头部*/
+  .pay_box1{
+  	height: 4.266667rem;
+  	width: 10.0rem;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: space-around;
+  	align-items: center;
+  	padding:0.4rem;
+  }
+  /*确认支付按钮*/
+  .zf_pay_btn{
+	margin:0.533333rem;
+	width: 8.933333rem;
+	height: 1.333333rem;
+	border:none;
+  }
+  /*支付成功box2*/
+  .zfc_box2{
+  	padding:0.533333rem;
+  	padding-right:1.066667rem;
+  	padding-bottom: 0.666667rem;
+  }
+  .zfc_btn{
+  	margin-right:0.533333rem;
+  	margin-left:0.533333rem;
+  }
+  .zfc_btn button{
+  	font-size: 0.373333rem;
+  	color: #0AD75C;
+  	width: 4.266667rem;
+  	height: 1.066667rem;
+  	background-color:white;
+  	border: #0AD75C 1px solid;
+  }
+
+  .buy_car_box1{
+  	width: 10.0rem;
+  	height: 1.333333rem;
+  	padding-right: 0.4rem;
+  	display: flex;
+  	justify-content: flex-end;
+  	align-items: center;
+  	border-bottom: #ececec 1px solid;
+
+  }
+/*商品栏*/
+.buy_car_box2{
+	width: 10.0rem;
+	height:3.466667rem;
+	display: flex;
+	align-items: center;
+
+}
+/*圆形按钮的div*/
+.circle_div{
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+  /*圆形按钮选中*/
+  .circle_btn{
+  	width:0.533333rem;
+  	height: 0.533333rem;
+  	border-radius: 0.266667rem;
+  	border:blue 1px solid;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	padding:0.0rem;
+  }
+ 
+  /*圆形按钮中心圆选中*/
+.circle_btn_heart{
+	width:0.266667rem;
+  	height:0.266667rem;
+  	border-radius: 0.133333rem;
+  	border:blue 1px solid;
+  	background-color: blue;
+}
+  /*圆形按钮没选中*/
+  .circle_btn_unchoise{
+  	width:0.533333rem;
+  	height: 0.533333rem;
+  	border-radius: 0.266667rem;
+  	border:#BBBBBB 1px solid;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	padding:0.0rem;
+  }
+    /*圆形按钮中心圆选中*/
+.circle_btn_heart_unchoise{
+	display: none;
+	width:0.266667rem;
+  	height:0.266667rem;
+  	border-radius: 0.133333rem;
+  	border:blue 1px solid;
+  	background-color: blue;
+}
+/*商品右边的*/
+.car_box2_right_css{
+	width: 8.4rem;
+	height: 3.466667rem;
+  	padding:0.4rem;
+  	display: flex;
+}
+.buy_car_add{
+	width: 4.8rem;
+	display: flex;
+	justify-content: flex-end;
+}
+/*购物车加减按钮*/
+.buy_car_add input{
+width: 0.8rem;
+height: 0.8rem;
+padding:0.0rem;
+margin-right:0.0rem;
+margin-left: 0.0rem;
+border: #BBBBBB 1px solid;
+background-color: white;
+}
+.goods_img_car{
+	height: 2.666667rem;
+	width: 2.666667rem;
+	max-width: 2.666667rem;
+	border: #dfdfdf 1px solid;
+}
+.car_box2_right_css_text{
+	display: flex;
+	flex-direction: column;
+
+	justify-content: space-around;
+}
+/*全选*/
+.all_chose{
+width: 2.666667rem;
+height: 1.6rem;
+display: flex;
+align-items: center;
+padding:0.4rem;
+}
+/*收件地址选择*/
+/*灰色背景层*/
+.xzdz_gray{
+	width: 10.0rem;
+	height: 100%;
+	position: fixed;
+	top: 0.0rem;
+	left: 0.0rem;
+	opacity: 0.5;
+	z-index: 1;
+	background-color: #000;
+}
+/*操作层*/
+.xzdz_user_set{
+	height: 9.6rem;
+	width: 10.0rem;
+	background-color: white;
+	position: fixed;
+	bottom:0.0rem;
+	left: 0.0rem;
+	z-index: 2;
+
+}
+/*标题及图标*/
+.xzdz_box1{
+	height: 1.333333rem;
+	padding:0.4rem;
+	width: 10.0rem;
+	border-bottom:#DFDFDF 1px solid;
+}
+/*默认地址*/
+.default_addr{
+height: 2.666667rem;
+width: 10.0rem;
+padding:0.4rem;
+border-bottom:#DFDFDF 1px solid;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.default_addr span{
+display: inline-block;
+}
+/*默认地址左边*/
+.default_addr_left{
+	width: 7.466667rem;
+	height: 1.866667rem;
+}
+/*默认设置样式*/
+.default_btn{
+	border-radius: 0.266667rem;
+	font-size: 0.266667rem;
+	width: 1.333333rem;
+	height: 0.6rem;
+	background-color: #E51C23;
+	color: white;
+}
+.dzxz_set{
+	display: inline-block;
+	height: 1.333333rem;
+	width: 5.0rem;
+	padding:0.0rem;
+	margin:0.0rem;
+	border:none;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+}
+.dzxz_set span{
+	display: inline-block;
+}
+.xzdz_box_btn{
+	height: 1.333333rem;
+	width: 10.0rem;
+	border-bottom:#DFDFDF 1px solid;
+}
+/*新增收件地址按钮*/
+.add_addr_btn{
+width: 5.333333rem;
+height: 0.933333rem;
+background-color: #FD0009;
+
+}
+.add_addr_btn_div{
+	height: 1.6rem;
+	width: 10.0rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*收货地址新增中间条咧*/
+.shxz_content{
+height: 1.2rem;
+width: 10.0rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-left:0.4rem;
+padding-right:0.4rem;
+border-bottom:#DFDFDF 1px solid;
+}
+.shxz_content input{
+	border:none;
+	height: 0.8rem;
+	width: 5.733333rem;
+}
+/*收货地址新增,操作面设置*/
+.shxz_user_set{
+	height: 10.133333rem;
+	width: 10.0rem;
+	background-color: white;
+	position: fixed;
+	bottom:0.0rem;
+	left: 0.0rem;
+	z-index: 3;
+}
+/*提现金额栏*/
+.cash_num{
+	height: 1.386667rem;
+	
+	display: flex;
+	align-items:center;
+}
+
+/*提现下一步按钮*/
+.tx_next_btn{
+	height: 1.333333rem;
+	width: 5.333333rem;
+	border-radius: 0.533333rem;
+	background-color: #72CE07;
+	border:none;
+}
+/*验证银行卡信息下一步按钮*/
+.bankcard_next_btn{
+	height: 1.333333rem;
+	width: 9.2rem;
+	background-color: #F8A0A0;
+	border:none;
+}
+
+.cash_num_mon{
+	font-size: 1.066667rem;
+	line-height: 1.066667rem;
+	 width: 0.533333rem;
+	 color: black;
+}
+.cash_num_input{
+	font-size: 0.933333rem;
+	line-height: 0.933333rem;
+	width: 8.266667rem;
+	color: black;	
+	border:none;
+}
+/*选择银行卡操作面*/
+.bank_cards{
+	position: fixed;
+	top: 6.053333rem;
+	left: 0.853333rem;
+	z-index: 3;
+	width: 8.266667rem;
+	height: 4.0rem;
+	background-color: white;
+}
+
+/*支付密码上半操作面*/
+.pay_passworde{
+	position: fixed;
+	top: 2.933333rem;
+	left: 0.8rem;
+	z-index: 3;
+	width: 8.266667rem;
+	height: 5.866667rem;
+	background-color: white;
+	padding-bottom:0.933333rem; 
+}
+
+/*意外情况，余额不足操作面*/
+.accident_nosuchmon
+{
+	position: fixed;
+	top: 6.053333rem;
+	left: 0.853333rem;
+	z-index: 3;
+	width: 8.266667rem;
+	height: 3.866667rem;
+	background-color: white;
+
+}
+/*疑问操作页面*/
+/*意外情况，余额不足操作面*/
+.bank_question
+{
+	position: fixed;
+	top: 6.053333rem;
+	left: 0.853333rem;
+	z-index: 6;
+	width: 8.266667rem;
+	height: 4.533333rem;
+	background-color: white;
+}
+
+/*选择银行卡标题*/
+.choise_bank_cards_title{
+	height: 1.333333rem;
+	padding-left: 0.4rem;
+	padding-right: 0.4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom:#ccc 1px solid;
+}
+/*选择已有的银行卡*/
+.choise_bank_cards{
+	height: 1.333333rem;
+}
+
+.error_number{
+	height: 2.533333rem;
+	width: 8.266667rem;
+	border-bottom: #999999 1px solid;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.error_number_bank_phone{
+	height: 1.333333rem;
+	width: 8.266667rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.error_number_bank_qus{
+	height: 2.133333rem;
+	width: 8.266667rem;
+	border-bottom: #999999 1px solid;
+	display: flex;
+	justify-content: center;
+	padding-left:0.4rem;
+	padding-right: 0.4rem;
+}
+.error_number_bank_under{
+   height: 1.066667rem;
+   width: 8.266667rem;
+   display: flex;
+	align-items: center;
+	justify-content: center;
+ 
+}
+.error_number_under{
+   height: 1.333333rem;
+   width: 8.266667rem;
+   display: flex;
+	align-items: center;
+	justify-content: center;
+ 
+}
+
+/*支付密码输入键盘*/
+#t-keyvalue {
+	width: 10.0rem;
+	height: 6.4rem;
+	border:#ccc 1px solid;
+	position: fixed;
+	left: 0.0rem;
+	bottom: 0.0rem;
+	background-color: white;
+	z-index: 3
+}
+
+table#t-keyvalue tr td {
+	font-size:0.4rem;
+	color: black;
+	border: 1px solid #ccc;
+	text-align: center;
+	width: 3.333333rem;
+	height: 1.4rem;
+	
+}
+#t-keybord {
+	border:none;
+	position: absolute;
+	z-index: 3px;
+	background-color: #fff;
+	width: 10.0rem;
+}
+
+/*支付密码输入框*/
+.pay_passworde_input input{
+height: 1.066667rem;
+width: 1.066667rem;
+border:#ccc 1px solid;
+border-right: none;
+text-align: center;
+}
+/*支付成功*/
+.pay_ok{
+	height: 8.0rem;
+	padding-bottom:0.8rem;
+	padding-top: 0.8rem;
+	padding-left:0.666667rem;
+}
+/*充值成功*/
+.filled_ok{
+	height: 4.4rem;
+	padding-bottom:0.533333rem;
+	padding-top: 0.533333rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.pay_ok span{
+	display: inline-block;
+}
+.green_circle{
+height: 0.64rem;
+width: 0.64rem;
+border-radius: 0.32rem;
+background-color: #00b200;
+}
+/*绿色40圆*/
+.green_circle_40px{
+height:0.533333rem;
+width: 0.533333rem;
+border-radius: 0.266667rem;
+background-color: #8BC34A;
+}
+/*灰色40圆*/
+.gary_circle_40px{
+height:0.533333rem;
+width: 0.533333rem;
+border-radius: 0.266667rem;
+border:#101010 1px solid;
+background-color: white;
+}
+/*蓝绿色圆*/
+.green_circle_max{
+height: 1.133333rem;
+width: 1.133333rem;
+border-radius: 0.56rem;
+background-color: #8BC34A;
+}
+.green_circle_140px{
+height: 1.866667rem;
+width: 1.866667rem;
+
+
+}
+
+/*灰色圆*/
+.gray_circle{
+height: 0.64rem;
+width: 0.64rem;
+border-radius: 0.32rem;
+background-color:#C3C3C3;
+}
+
+/*支付成功第一行*/
+.pay_ok_row1{
+height: 0.666667rem;
+display: flex;
+align-items: center;
+
+}
+.pay_ok_row2{
+height: 1.333333rem;
+display: flex;
+align-items: center;
+}
+/*绿色虚线*/
+.green_dashed{
+     height: 1.866667rem;
+border-left-width: 0.066667rem;
+border-left-style: dashed;
+border-left-color: #00b200;
+}
+/*灰色虚线*/
+.gary_dashed{
+     height: 1.866667rem;
+     border-left-width: 0.066667rem;
+     border-left-style: dashed;
+     border-left-color: #c3c3c3;
+}
+
+/*账单明细*/
+
+.bill_box1{
+	width: 10.0rem;
+	height: 2.133333rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding:0.4rem;
+	border-bottom: #999999 1px solid;
+}
+.bill_box1 span{
+	display: inline-block;
+}
+.padding_L_R30px{
+	width: 10.0rem;
+	padding-right: 0.4rem;
+	padding-left:0.4rem;
+	padding-bottom: 0.4rem;
+}
+/*账单详情充值*/
+.bill_filled_box1{
+height: 2.533333rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-bottom: #999999 1px solid;
+}
+/*账单详情充值内容条*/
+.bill_filled_box2{
+height: 1.066667rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+/*实名认证，绑定成功*/
+/*充值成功*/
+.rell_name_set{
+	
+	padding-top:2.4rem;
+	display: flex;
+	width: 10.0rem;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/*实名认证*/
+.rell_name_box1{
+height: 2.666667rem;
+padding:0.666667rem;
+}
+.rell_name_box1 span{
+	display: inline-block;
+}
+/*实名认证灰色线*/
+.gray_line{
+width:2.666667rem; 
+border:#ccc 3px solid;
+}
+/*实名认证绿色线*/
+.green_line{
+width:2.666667rem; 
+border:#72CE07  3px solid;
+}
+/*实名认证*/
+.set_name{
+	height: 1.6rem;
+	padding-left: 0.666667rem;
+	display: flex;
+	background-color: white;
+	border-bottom:#DFDFDF 1px solid;
+	align-items: center;
+	justify-content: space-between;
+}
+.set_name span{
+	display: inline-block;
+}
+.set_name input{
+	width: 7.2rem;
+	height: 1.533333rem;
+	border:none;
+	margin:0.0rem;
+}
+
+.rell_name_checkbox{
+	height: 1.333333rem;
+	padding:0.4rem;
+	padding-left: 0.666667rem;
+	display: flex;
+	align-items:center;
+}
+#checkbox_word,#checkbox{
+margin:0.0rem;
+}
+#checkbox{
+	-webkit-appearance:none;
+	background-color: #fff;
+	border:#888888 1px solid;
+}
+/*设置交易密码*/
+.input_password{
+	widows: 10.0rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/*密码输入框*/
+.input_password_box{
+	font-size:0.4rem;
+	text-align: center;
+
+}
+.input_password_box input{
+	display: inline-block;
+	width: 1.466667rem;
+	height: 1.466667rem;
+	border:#ccc 1px solid;
+	border-left: none;
+	text-align: center;
+
+}
+.rell_name_box1_row1{
+height: 0.533333rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/*绑定银行卡
+获取验证码*/
+#get_verification{
+    margin:0.0rem;
+    padding:0.0rem;
+	width: 2.666667rem;
+	height: 0.933333rem;
+	background-color: #ccc;
+	margin-right:0.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*空span宽度*/
+.empty_span{
+    margin:0.0rem;
+    padding:0.0rem;
+	width: 2.666667rem;
+	height: 0.933333rem;
+	margin-right:0.4rem;
+}
+/*span宽度110*/
+.span_width_120px{
+	width: 1.6rem;
+}
+#sure_bank_card input{
+	width: 4.266667rem;
+}
+/*字体加粗*/
+.strong{
+font-weight:bolder;
+}
+
+.bank_card_box1{
+margin:0.4rem;
+background-color: #5885EE;
+height: 3.2rem;
+padding:0.533333rem;
+}
+.bank_card_box1_row1{
+	height: 1.066667rem;
+	display: flex;
+   align-items: center;
+}
+.bank_card_box1 span{
+	display: inline-block;
+}
+.img_size_60px{
+	height: 0.8rem;
+	width: 0.8rem;
+}
+/*绑定银行卡输入卡号*/
+.please_push_cards{
+   width: 10.0rem;
+   height: 1.333333rem;
+   padding-top:0.533333rem;
+   padding-left:0.666667rem;
+   display: flex;
+   align-items: center;
+}
+
+/*验证银行卡用户协议*/
+.user_agreement_box{
+	height: 1.6rem;
+	width: 10.0rem;
+	padding-left: 0.666667rem;
+	display: flex;
+	align-items: center;
+}
+.bank_card_details{
+width: 10.0rem;
+height: 1.333333rem;
+padding:0.4rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-bottom: #ccc 1px solid;
+}
+
+/*登录*/
+.login{
+	width: 10.0rem;
+	padding-left: 0.4rem;
+	padding-right: 0.4rem;
+	background: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.login_box1{
+ 	height: 5.733333rem;
+ 	font-size:1.466667rem;
+ 	line-height: 1.533333rem;
+ 	color: #fff;
+ 	display: flex;
+ 	align-items: center;
+ 	padding-bottom:0.4rem;
+ 	justify-content: center;
+}
+/*用户名输入框*/
+.login_box2{
+	height: 1.6rem;
+	padding-left: 0.333333rem;
+	border:#80a9cf 2px solid;
+	display: flex;
+	align-items: center;
+	margin-bottom:0.4rem;
+}
+.login_box2_img1{
+	width: 0.533333rem;
+	height: 0.613333rem;
+}
+.login_username{
+	border:none;
+	padding:0px;
+	background:none;
+	height: 1.573333rem;
+}
+.login_box2_img2{
+width: 0.586667rem;
+height: 0.666667rem;
+}
+/*确认登录按钮*/
+.login_btn{
+	height: 1.6rem;
+	border:none;
+	padding:0px;
+	background:#0391da;
+	opacity:0.8;
+	font-size:0.48rem;
+	font-weight:bolder;
+	color: #fff;
+	margin-bottom:0.4rem;
+}
+/*注册头部*/
+.register_box1{
+	height: 2.933333rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/*注册欢迎字体*/
+.register_welcome{
+font-size:0.746667rem;
+line-height: 0.746667rem;
+font-weight:bolder;
+color: #101010;
+}
+/*新用户字体*/
+.register_newuser{
+font-size:0.533333rem;
+line-height: 0.533333rem;
+color: #9B9B9B;
+}
+.register_box2 input{
+	padding:0.0rem;
+	margin:0.0rem;
+	padding-left: 0.533333rem;
+	padding-right: 0.533333rem;
+	height: 1.6rem;
+	border:none;
+	border-bottom: #F5F5F5 1px solid;
+
+}
+/*注册获取验证码*/
+.register_get{
+
+	width: 2.666667rem;
+	height: 0.96rem;
+	margin:0.0rem;
+	border:none;
+	padding:0.0rem;
+	background-color:#9B9B9B;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*验证码一栏*/
+.register_verification{
+	background-color: #fff;
+	padding-right: 0.533333rem; 
+	padding-left: 0.533333rem; 
+	height: 1.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top: #ccc 1px solid;
+}
+.register_verification input{
+	padding:0.0rem;
+	width:6.266667rem;
+	border:none;
+	height: 1.573333rem;
+}
+.set_password_box1{
+height: 1.6rem;
+background-color: #fff;
+width:10.0rem;
+display: flex;
+align-items: center;
+padding-left:0.666667rem;
+ border-bottom: #ccc 1px solid;
+}
+.set_password_box1 input{
+width: 8.666667rem;
+border:none;
+height: 1.573333rem;
+}
+.login_password{
+	width: 1.866667rem;
+}
+
+.forget_password_box1{
+height: 1.6rem;
+background-color: #fff;
+width:10.0rem;
+display: flex;
+align-items: center;
+padding-left:0.666667rem;
+ border-bottom: #ccc 1px solid;
+}
+
+.forget_password_box1 input{
+width: 4.4rem;
+border:none;
+height: 1.573333rem;
+}
+.forget_password_box1_row1{
+	height: 1.6rem;
+	display: flex;
+	align-items: center;
+}
+
+/*用户登录界面标题*/
+.login_title_img{
+   height: 1.373333rem;
+   width: 5.986667rem;
+}
+
+/*垃圾桶图片大小*/
+.img_size29_33{
+	width: 0.386667rem;
+	height: 0.44rem;
+}
+.img_size17_29{
+	width: 0.226667rem;
+	height: 0.386667rem;
+}
+.img_size45_33{
+	width: 0.6rem;
+	height: 0.44rem;
+}
+#set_password_pages input{
+	height: 1.706667rem;
+	border:none;
+	font-size:0.266667rem;
+}
+#set_password_pages button{
+	
+}
+/*银行卡图标*/
+.my_bankcard{
+	border-radius: 0.4rem;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*公告详情*/
+.notice_content{
+	text-align: center;
+	padding:0.533333rem;
+	
+}
+.gray_div{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0.0rem;
+	left:0.0rem;
+	background-color: #000;
+	z-index: 5;
+	opacity: 0.7;
+}
+#getphone{
+	
+	width: 2.733333rem;
+	font-size:0.4rem;
+}

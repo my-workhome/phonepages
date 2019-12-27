@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1,minimun-scale=1,user-scalable=no">
+	<title>验证银行卡信息</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/wk_all.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	
+</head> <body class="gray_bg">   
+<div class="gray_gbdiv"></div>
+	<div class="text_black_30px" id="sure_bank_card">
+	<div class="set_name space_btw">
+		<span>
+		<span class="span_width_120px strong">银行</span>
+		<span class="span_width_120px strong">建设银行</span>
+		<span class="unservice_40px">
+		</span>
+		
+	</div>
+	<div class="set_name space_btw">
+		<span>
+		<span class="span_width_120px strong">卡类型</span>
+		<span class="span_width_120px strong">储蓄卡</span>
+		</span>
+		<span class="unservice_40px">
+		</span>
+	</div>
+	<div class="gray_gbdiv"></div>
+
+	<div class="set_name space_btw">
+		<span>
+		<span class="span_width_120px strong">手机号</span>
+		<input type="text" placeholder="请输入银行预留手机号">
+		</span>
+		<span class="unservice_40px">
+			
+			<img class="img_size_50px" src="../img/icon_9.png">
+		</span>
+		
+	</div>
+
+	<div class="user_agreement_box" >
+		
+		<input type="checkbox" class="div_size40px " id="user_agreement"> 
+		<div class="text_blank_24px service_20px">同意</div>
+		<div class=""><a href="">《用户服务协议》</a></div>
+		
+	</div>
+
+<div class="mar_top_40px" style="text-align: center;"><button class="img-rounded bankcard_next_btn text_white_24px">下一步</button>
+</div>
+
+<!-- 灰色背景层 -->
+ <div class="xzdz_gray" style="opacity: 0.5;"></div>
+ <!-- 操作主体 -->
+  <div class="bank_question" style="display: none;">
+  	<div class="text_black_30px error_number_bank_phone">手机号 </div>
+    <div class="error_number_bank_qus text_gray_30px">
+    银行预留手机号是在银行办卡时填写的手机号，若遗忘、换号可联系银行客服电话处理
+    </div>
+   
+    <div class="error_number_bank_under text_blue_30px">知道了</div>
+  </div>
+
+
+
+ <script type="text/javascript">
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	let htmlDon=document.getElementsByTagName("html")[0];
+		htmlDon.style.fontSize=htmlWidth/10 + "px";
+ </script>
+</body>
+</html>

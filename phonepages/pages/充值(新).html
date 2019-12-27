@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1,minimun-scale=1,user-scalable=no">
+<title>充值</title>
+<link rel="stylesheet" href="../css/	bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/wk_all.css">
+<link rel="stylesheet" type="text/css" href="../css/yqh_all.css">
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<style type="text/css">
+	.rechargeMoney{
+		padding:0.533333rem;
+	}
+	.amount{
+		background-color: white;
+		height: 1.333333rem;
+		width: 4.266667rem;
+		font-size:0.426667rem;
+		border:none;
+	}
+	.flex_bet{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.row2{
+		margin-top:0.4rem;
+	}
+	.row3{
+		margin-top:0.4rem;
+	}
+	.inputMoney{
+		width: 8.933333rem;
+		font-size:0.373333rem;
+		padding-left: 0.533333rem;
+		height: 1.333333rem;
+	}
+	.way_title{
+		padding-left: 0.533333rem;
+		font-size:0.373333rem;
+		font-weight: bolder;
+		color: black;
+		margin-bottom:0.4rem;
+	}
+	.wayRow{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-left: 0.533333rem;
+		padding-right: 0.533333rem;
+		border-bottom:#ccc 1px solid;
+		height: 1.6rem;
+	}
+	.selected{
+		border:#01a9f0 2px solid;
+		color: #01a9f0;
+	}
+</style>
+<script type="text/javascript">
+	$(function () {
+		// 固定金额按钮
+		$(".amount").click(function () {
+			$(".amount").not(this).removeClass("selected");
+			$(this).toggleClass("selected");
+			$(".inputMoney").removeClass("selected");
+		});
+		// 输入金额按钮
+		$(".inputMoney").click(function(){
+			$(this).toggleClass("selected");
+			$(".amount").removeClass("selected");
+		});
+		// 立即转账
+		$("#transfer").click(function () {
+			if($(".selected").length==0){
+				console.log("请输入金额");
+			}else{
+				if (!$("input[name=way]:checked").attr("id")) {
+					console.log("请选择充值方式");
+				}
+				else{
+					// 充值金额和方式
+					var moner = $(".selected").val();
+					var way = $("input[name=way]:checked").attr("id");	
+				}
+			}
+		});
+	})
+</script>
+</head>
+<body class="gray_bg">	
+	<!-- 顶部金额选择start -->
+	<div class="rechargeMoney">
+		<div class="flex_bet">
+			<button type="button" class="amount" value="100">100元</button>
+			<button type="button" class="amount" value="200">200元</button>
+		</div>
+		<div class="flex_bet row2">
+			<button type="button" class="amount" value="500">500元</button>
+			<button type="button" class="amount" value="1000">1000元</button>
+		</div>
+		<div class="row3">
+			<input type="text" class="inputMoney" value="" placeholder="请输入其他金额进行充值"> 
+		</div>
+	</div>
+	<div class="way_title">请选择支付方式</div>
+	<div class="way white_bg ">
+		<div class="wayRow">
+			<div class="buy_num" style="border:none;">
+				<img style="width: 0.586667rem;height: 0.52rem;" src="../img/icon_26.png" alt="">
+				<div class="service_20px text_black_30px">微信</div>
+			</div>
+			<input style="width:0.586667rem;height: 0.533333rem;" type="radio" id="weChat" name="way">
+		</div>
+		<div class="wayRow">
+			<div class="buy_num" style="border:none;">
+				<img style="width:0.586667rem;height: 0.573333rem;" src="../img/icon_27.png" alt="">
+				<div class="service_20px text_black_30px">支付宝</div>
+			</div>
+			<input style="width: 0.533333rem;height: 0.533333rem;" type="radio" id="alipay" name="way">
+		</div>
+		<div class="wayRow">
+			<div class="buy_num" style="border:none;">
+				<img style="width: 0.586667rem;height: 0.52rem;" src="../img/icon_28.png" alt="">
+				<div class="service_20px text_black_30px">银行卡</div>
+			</div>
+			<input style="width: 0.533333rem;height: 0.533333rem;" type="radio" id="bankCards" name="way">
+		</div>
+	</div>
+	<!-- 顶部金额选择end -->
+	<div style="padding-right: 0.533333rem;padding-left: 0.533333rem">
+	<button id="transfer" type="button" class="btn btn-primary mar_top_40px btn-lg btn-block text_white_30px" style="height: 1.2rem; background-color: #01a9f0">立即转账</button>
+	</div>
+<!-- 输入支付密码end -->
+ <script type="text/javascript">
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	let htmlDon=document.getElementsByTagName("html")[0];
+		htmlDon.style.fontSize=htmlWidth/10 + "px";
+ </script>
+</body>
+</html>

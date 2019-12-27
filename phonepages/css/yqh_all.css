@@ -1,0 +1,48 @@
+
+
+.btn-distance{
+
+	height: 1.733333rem;
+	width: 10.0rem;
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	align-items: center;
+}
+
+.prompt-icon{ 	
+	width: 10.0rem;
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	align-items: center;
+	
+ }
+
+ .prompt-line{ 
+ 	width: 4.0rem;
+ 	height: 0.053333rem;
+ 	margin:0 0.4rem;
+ 	background-color: #d5d5d5; 
+ }
+ .prompt-line-none{ 
+ 	width: 4.0rem;
+ 	height: 0.053333rem;
+ 	margin:0 0.4rem;
+ }
+
+ .text-box{
+	width:1.866667rem;
+	height: 1rem;
+	text-align: center;
+ }
+
+ .img-box{ 
+ 	width:10rem;
+ 	height:-webkit-fill-available ;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+ }
+

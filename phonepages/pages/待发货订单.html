@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1,minimun-scale=1,user-scalable=no">
+	<title>待发货订单</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/wk_all.css">
+
+
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script>
+    $(function () {
+       $("#all_order").click(function () {
+         window.location.href="../pages/全部订单.html"
+       });
+        $(".payable").click(function () {
+         window.location.href="../pages/我的订单.html"
+       });
+        $(".pending_shipment").click(function () {
+         window.location.href="../pages/待发货订单.html"
+       });
+         $(".pending_receive").click(function () {
+         window.location.href="../pages/待收货订单.html"
+       });
+          $(".pending_supplied").click(function () {
+         window.location.href="../pages/待提货订单.html"
+       });
+         $(".inlube_body_box1").on("click",".goods_img",function () {
+         window.location.href="../pages/订单详情.html"
+         });
+    });
+  </script>
+
+</head>
+<body class="gray_bg">
+
+	
+<div>
+  <div class="white_bg">
+   <div class="top_below2 gray_bg" id="all_order">
+    <div style="display:flex; align-items: center;">
+       <div><img class="service img-responsive" style="width:0.373333rem; height: 0.44rem;" src="../img/icon_12.png" alt=""></div>
+       <div class="service_20px text_black_30px">全部订单</div> 
+    </div>
+    <div style="display:flex;align-items: center;" class="text_black_24px">
+      查看全部订单
+       <img class="service_20px unservice img-responsive" style="width:0.226667rem; height: 0.373333rem;" src="../img/arrow_2.png" alt="">
+     </div>
+   </div>
+ <div class="line_sall_top ">
+     <div class=" text_sall_nexybtn payable">待支付</div>
+      <div class=" text_sall_firstbtn pending_shipment">代发货</div>
+     <div class="text_sall_nexybtn pending_receive">待收货</div>
+     <div class="text_sall_nexybtn pending_supplied">待提货</div>
+   </div>
+   <div class="order_time">
+     <div class=" font_size_24gray service">下单时间：<span>2019-07-09</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>16:24:50</span></div>
+      <div class="text_red_24px unservice">¥600.00</div>
+   </div>
+    <div class="inlube_body_box1">
+     <!-- 商品图片 -->
+      <div class="goods_img">
+         <img src="../img/mallpic.png" class="img-responsive"  alt="">
+      </div> 
+        <!-- 商品描述部分 -->
+      <div class="goods_describe">
+        <!-- 名称价格 -->
+         <div class="goods_order">
+            <div class="font_size_24black mar_top_10px">全自动引擎清洗服务</div>
+            <div class="font_size_24gray">数量 1</div>
+            <div class="text_red_30px">¥ 600.00</div>
+         </div>
+       </div>  
+     </div>
+      <div class="order_time gray_bg" style="border-bottom:#B0B0B0 1px solid;border-top:#B0B0B0 1px solid;">
+         <div class="service text_black_24px">已支付，待发付</div>
+      </div>
+</div>
+
+ <script type="text/javascript">
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	let htmlDon=document.getElementsByTagName("html")[0];
+		htmlDon.style.fontSize=htmlWidth/10 + "px";
+ </script>
+</body>
+</html>

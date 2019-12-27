@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1,minimun-scale=1,user-scalable=no">
+	<title>银行卡详情</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/wk_all.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bulletFrame.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script>
+		$(function () {
+			bulletFrame("手机号","手机号错误，请重新输入","重新输入");
+			// errorTips("错误信息大范甘迪水果放到符合法规和",30,3000);
+			$("#new_user").click(function () {
+				window.location.href="../pages/注册与登录.html"
+			});
+			$("#forget_password").click(function () {
+				window.location.href="../pages/忘记密码.html"
+			});
+			$("#sure_login").click(function () {
+				window.location.href="../pages/钱包首页.html"
+			});
+		});
+			
+			
+	
+	</script>
+</head> 
+<body class="login">    
+ <div class="login_box1">
+ 	<div class="login_title_img img-responsive">
+ 	<img class="img-responsive" src="../img/logo.png" alt="">
+ 	</div>
+ </div>
+ <div class="login_box2">
+ 	<div class="login_box2_img1"><img class="img-responsive" src="../img/icon_6.png" alt=""></div>
+ 	<input type="text" placeholder="请输入手机号" class="login_username form-control text_white_30px service" id="username">
+ </div>
+ <div class="login_box2">
+ 	<div class="login_box2_img2"><img class="img-responsive" src="../img/icon_7.png" alt=""></div>
+ 	<input type="password" placeholder="请输入手机号" class="login_username form-control text_white_30px service" id="password">
+ </div>
+ <input class="login_btn form-control" type="button" id="sure_login" value="确认登录">
+ <div class="space_btw">
+ 	<div class="text_white_24px" id="new_user">新用户注册</div>
+ 	<div class="text_white_24px" id="forget_password">忘记密码？</div>
+ </div>
+ <script type="text/javascript">
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	let htmlDon=document.getElementsByTagName("html")[0];
+		htmlDon.style.fontSize=htmlWidth/10 + "px";
+ </script>
+</body >
+</html>

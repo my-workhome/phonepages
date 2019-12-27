@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1,minimun-scale=1,user-scalable=no">
+	<title>订单支付</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/wk_all.css">
+
+
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script>
+        $(function () {
+           $("#sure_pay").click(function () {
+             window.location.href="../pages/订单支付成功.html"
+           });
+        });
+    </script>
+</head>
+<body class="gray_bg">
+	<div class="gray_gbdiv"></div>
+  <!-- 订单支付主体 -->
+  <div>
+    <div class="pay_box1 white_bg">
+    	<div class="font_size_24gray">
+    		<span>订单号：</span>
+    		<span>609162333025319126</span>
+    	</div>
+    	<div class="text_red_36px">
+    		<span>共计金额 </span>
+    		<span>¥ 600.00</span>
+    	</div>
+    	<div class="text_black_24px">
+    		<span>下单时间:</span>
+    		<span>2019-07-09 16:23:07</span>	
+    	</div>
+    </div>
+
+    <button id="sure_pay" class="font_size_36white_strong zf_pay_btn green_btn">确认支付</button>
+  </div>
+ <script type="text/javascript">
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	let htmlDon=document.getElementsByTagName("html")[0];
+		htmlDon.style.fontSize=htmlWidth/10 + "px";
+ </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1,minimun-scale=1,user-scalable=no">
+	<title>实名认证</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/wk_all.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script>
+		$(function () {
+			// 选择框颜色
+			$("#checkbox").click(function () {
+				if($(this).attr("value")==0){
+				$(this).css("background-color","#4DB4FF");
+				$(this).attr("value","1")
+				}
+				else
+				{
+					$(this).css("background-color","");
+				$(this).attr("value","0");
+				}
+			});
+			$("#next").click(function () {
+				if($("#checkbox").attr("value")==1){
+				window.location.href="../pages/实名认证-设置交易密码.html"
+				}
+			});
+		});
+	</script>
+	
+</head> <body class="gray_bg">    
+ <div class="rell_name_box1">         
+   <div class="rell_name_box1_row1 ">   
+ 	<span class="green_circle_40px service"></span>             
+ 	<span class="service_10px ">
+ 	   <hr class="gray_line">
+    </span>
+    <span class="gary_circle_40px service_10px"></span>
+    <span class="service_10px">
+    <hr class="gray_line">
+	</span>
+			<span class="gary_circle_40px service_10px"></span>
+		</div>
+		<div class="text_black_24px space_btw mar_top_20px">
+			<span>实名认证</span>
+			<span>设置交易密码</span>
+			<span>绑定银行卡</span>
+		</div>
+	</div>
+	<div>
+		<div class="set_name text_black_24px">
+			<lable for="name">名字</lable>
+			<input id="name" type="text" placeholder="请填写真实姓名">
+		</div>
+		<div class="set_name text_black_24px">
+			<lable for="name">身份证号</lable>
+			<input id="name" type="text" placeholder="请填写真实身份证号码">
+		</div>
+	</div>
+
+<div class="rell_name_checkbox font_size_24gray" >
+	<input type="checkbox" id="checkbox" class="img_size " >
+	<label for="checkbox" id="checkbox_word" style="margin-left:0.266667rem;">为验证真实身份，您同意收集上述信息</label>
+</div>
+<div style="text-align: center;"><button id="next" class="tx_next_btn text_white_30px">下一步</button>
+</div>
+
+ <script type="text/javascript">
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	let htmlDon=document.getElementsByTagName("html")[0];
+		htmlDon.style.fontSize=htmlWidth/10 + "px";
+ </script>
+</body>
+</html>

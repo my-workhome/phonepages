@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1,minimun-scale=1,user-scalable=no">
+	<title>银行卡详情</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/wk_all.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script>
+		$(function () {
+			$("#relieve").click(function () {
+				window.location.href="../pages/银行卡.html"
+			});
+		})
+	</script>
+</head> 
+<body class="gray_bg">    
+ <div class="bank_card_box1 img-rounded">   
+	<div class="bank_card_box1_row1 text_white_30px mar_top_10px">
+		<span class="img_size_60px">			
+			<div class="img_size_60px my_bankcard">
+				<img class="img-responsive " src="../img/icon_20.png" alt="">
+			</div>
+		</span>
+		<span class="service">
+			<div>中国建设银行</div>
+			<div class="font_size_20white mar_top_10px">储蓄卡</div>
+		</span>
+	</div>
+	<div style="margin-top:-0.133333rem;">
+		<span class="img_size_60px"></span>
+		<span class="font_size_36white_strong service_20px">00110011001100110011</span>
+	</div>
+ </div>
+ <div class="font_size_24gray bank_card_details">
+ 	<div>单比支付限额</div>
+ 	<div>¥100000.00</div>
+ </div>
+ <div class="font_size_24gray bank_card_details">	
+ 	<div>每日支付限额</div>
+ 	<div>¥100000.00</div>
+ </div>
+<div class="mar_top_40px" style="text-align: center;">
+	<button id="relieve" class="add_bank_cards_btn img-rounded text_red_36px_unstrong">解除绑定</button>
+</div>
+
+
+
+
+
+ <script type="text/javascript">
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	let htmlDon=document.getElementsByTagName("html")[0];
+		htmlDon.style.fontSize=htmlWidth/10 + "px";
+ </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1,minimun-scale=1,user-scalable=no">
+	<title>操作成功提示</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/wk_all.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script>
+    $(function () {
+     $("#finish").click(function () {
+       window.location.href="../pages/个人中心.html"
+     });
+    });
+  </script>
+</head>
+<body class="gray_bg">
+<div class="rell_name_set">
+   <div style="height:2.266667rem;width: 2.266667rem; border-radius:1.133333rem;">
+   <img class="img-responsive" src="../img/icon_11.png" alt="">
+     
+   </div>
+   <div class="text_black_36px mar_top_60px">
+        操作成功
+   </div>
+<div style="text-align: center;">
+    <button id="finish" class="tx_next_btn mar_top_160px text_white_30px">完成</button>
+</div>
+
+ <script type="text/javascript">
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	let htmlDon=document.getElementsByTagName("html")[0];
+		htmlDon.style.fontSize=htmlWidth/10 + "px";
+ </script>
+</body>
+</html>

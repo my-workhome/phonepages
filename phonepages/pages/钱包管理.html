@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1,minimun-scale=1,user-scalable=no">
+	<title>钱包管理</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/wk_all.css">
+
+
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script>
+     $(function () {
+        $("#my_message").click(function () {
+         window.location.href="../pages/个人中心.html"
+        });
+         $(".btn_qianb").click(function () {
+         window.location.href="../pages/账单明细.html"
+        });
+         $("#cash").click(function () {
+         window.location.href="../pages/提现.html"
+        });
+         $("#recharge").click(function () {
+         window.location.href="../pages/充值.html"
+        });
+         $("#bank_cards").click(function () {
+         window.location.href="../pages/银行卡.html"
+        });
+      });
+  </script>
+</head>
+<body class="gray_bg">
+  <!-- 头部钱包 -->
+   <div class="head">
+   	  <div class=" text_white_30px notice1 top_below1" id="my_message"> 
+      <div class="service">
+      <div>
+             钱包账号：
+        </div>
+        <div>18507482137</div>
+        </div>
+        <div class="unservice"><div>个人中心</div>
+        <div class="img_size17_29 service_20px"><img class="img_size17_29 " src="../img/arrow_1.png"></div>
+        </div>
+    </div>
+    <div class="top_below">
+      <div class="money_num">
+         <div class="text_white_24px" style="margin-left: 0.466667rem;margin-top:0.866667rem;">钱包余额（元）</div>
+         <div class="text_white_90px"style="margin-left:0.333333rem;margin-top: 0.466667rem;">102.85</div>
+       </div>
+       <div class="btn btn_qianb_position" style="margin-top: 1.2rem; display: flex;">
+           <div class=" btn_qianb">账单明细</div>
+       </div>
+  
+   </div>
+</div>
+
+	<div class="gray_gbdiv "></div>
+<div>
+  <div class="white_bg">
+   <div class="top_below1 " style="border-bottom: #ececec 1px solid;" id="cash">
+ 	   <div class="service text_black_30px line_height_10"><img style="width: 0.4rem; height: 0.4rem; margin-right: 0.266667rem;" src="../img/icon_3.png" alt="">提现
+ 	   </div>    
+ 	   <div><img class="unservice" style="width:0.226667rem; height: 0.373333rem;" src="../img/arrow_2.png" alt="">
+ 	   </div>
+   </div>
+
+   <div class="top_below1" style="border-bottom: #ececec 1px solid;" id="recharge">
+ 	   <div class="service text_black_30px line_height_10"> <img style="width: 0.4rem; height: 0.306667rem; margin-right: 0.266667rem;" src="../img/icon_4.png" alt="">充值
+ 	   </div>    
+ 	   <div><img class="unservice" style="width:0.226667rem; height: 0.373333rem;" src="../img/arrow_2.png" alt="">
+ 	   </div>  
+   </div>
+  
+   <div class="top_below1 " id="bank_cards">
+ 	   <div class="service text_black_30px line_height_10"><img style="width: 0.4rem; height:0.333333rem; margin-right: 0.266667rem;" src="../img/icon_5.png" alt="">银行卡
+ 	   </div>   
+ 	   <div><img class="unservice" style="width:0.226667rem; height: 0.373333rem;" src="../img/arrow_2.png" alt="">
+ 	   </div>
+   </div>
+   
+</div>
+  <div class="botton_btn"><a href="../pages/常见问题.html">常见问题</a></div>
+ <script type="text/javascript">
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	let htmlDon=document.getElementsByTagName("html")[0];
+		htmlDon.style.fontSize=htmlWidth/10 + "px";
+ </script>
+</body>
+</html>

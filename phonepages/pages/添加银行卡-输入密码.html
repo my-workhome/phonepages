@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1,minimun-scale=1,user-scalable=no">
+	<title>添加银行卡-输入密码</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/wk_all.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	
+</head> <body class="gray_bg">  
+<div class="gray_bg"> 
+	<div class="input_password mar_top_200px">
+		<div class="text_black_30px">请输入支付密码，以验证身份</div>
+		<div class="input_password_box mar_top_40px">
+			<input type="text" style="border-left:#ccc 1px solid;"><input type="text"><input type="text"><input type="text"><input type="text"><input class="" type="text">
+		</div>
+	</div>
+<!-- 支付密码键盘 -->
+<div id="t-keybord">
+  <table id="t-keyvalue" class="keyboard" cellspacing="0" cellpadding="0">
+    <tr><td colspan="3">安全输入键盘</td></tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>确定</td>
+      <td>0</td>
+      <td>删除</td>
+    </tr>
+  </table>
+</div>
+</div> 
+
+
+ <script type="text/javascript">
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	let htmlDon=document.getElementsByTagName("html")[0];
+		htmlDon.style.fontSize=htmlWidth/10 + "px";
+ </script>
+</body>
+</html>

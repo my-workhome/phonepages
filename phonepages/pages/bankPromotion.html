@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1,minimun-scale=1,user-scalable=no">
+	<title>三湘银行零钱宝</title>
+	<style type="text/css">
+		*{margin: 0px; padding: 0px;} body,html{ height: 100%; width: 100%;}
+		.body{background: url('../img/bpbg.png');width: 100%; min-height: calc(100%);
+			background-size: cover;
+		}
+		.title{ padding: 0.533333rem 0px;
+				display: flex;
+				flex-direction: column;
+			    align-items: center;
+			    justify-content: center;
+			}
+		.title img{ width: 50%; }
+		.titleimg2{ margin-top:0.266667rem; }
+
+		.main{ position: relative; display: flex; flex-direction: column;align-items: center; }
+		.main > div{ background: white;border-radius: 0.266667rem; width: 65%;}
+		.main > img{ position: absolute;  height: 1.333333rem}
+		.mainBox1{display: flex;padding: 0.4rem 0.666667rem; justify-content: space-around;}
+		.mainBox1 h2{font-size: 0.4rem; font-weight: bolder;color: #666666}
+		.mainBox1 h1{font-size: 0.573333rem; color: #be0707;}
+		.mainBox1 p{font-size: 0.333333rem; color: #333333} 
+		.mainBox1 img{height: 1.733333rem;}
+		.mainBox2{ margin-top: 0.4rem; }
+		.mainBox3{ margin-top:0.4rem; flex:1; }
+		.link1{top:2.066667rem; left: 1.6rem} .link2{top:2.066667rem; right: 1.6rem} .link3{top: 5.013333rem;left: 1.6rem;} .link4{top: 5.013333rem;right: 1.6rem;}
+		.footer{padding: 0.4rem 0px;  font-size:0.266667rem; color: #ffffff;  display: flex;flex-direction: column;align-items: center; justify-content: center;}
+		.footer > img{ height: 2.0rem; margin-bottom: 0.2rem }
+		.mainBox3 h2 , .mainBox2 h2{font-size: 0.48rem; color: #be0707; text-align: center; margin-bottom:0.266667rem;}
+		.mainBox3 .mainBox1text{padding:0 0.4rem;}
+		.mainBox2 p{display: flex; justify-content: space-around;}
+		.mainBox2 .mainBox1text{padding:0px;  width: 100%;}
+	</style>
+</head>
+<body>
+<div class="body">
+	<div class="title">
+		<img src="../img/bptitle1.png" alt="">
+		<img class="titleimg2" src="../img/bptitle2.png" alt="">
+	</div>
+	<div class="main">
+		<div class="mainBox1">
+			<img src="../img/walet.png" alt="">
+			<div class="mainBox1text">
+				<h2 >固定年化收益率</h2>
+				<h1>3.9875%</h1>
+				<p>7X24小时随存随取</p>
+			</div>
+		</div>
+		<div class="mainBox1 mainBox2">
+			<div class="mainBox1text">
+				<h2 >产品特点</h2>
+				<p>
+					<span>高收益，3.9875%</span>  
+					<span>低风险， 储蓄存款</span>
+				</p>
+				<p>
+					<span>低门槛，50元起存</span>
+					<span>秒到账，随取随用</span>            
+				</p>
+			</div>
+		</div>
+		<div class="mainBox1 mainBox3">
+			<div class="mainBox1text">
+				<h2 >推荐有奖</h2>
+				<p>推荐他人在三湘银行开户，填写推荐码 <span style="color: red">（1002072550）</span>，成功购买零钱宝后 可享专属推荐奖励。</p>
+			</div>
+		</div>
+		<img src="../img/link.png" class="link1" alt="">
+		<img src="../img/link.png" class="link2" alt="">
+		<img src="../img/link.png" class="link3" alt="">
+		<img src="../img/link.png" class="link4" alt="">
+	</div>
+	<div class="footer">
+		<img src="../img/two-dimension.png" alt="">
+		<p >扫描关注“三湘银行”公众号</p>
+		<p> 在线开通三湘银行电子账户 </p>
+	</div>
+</div>
+
+ <script type="text/javascript">
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	let htmlDon=document.getElementsByTagName("html")[0];
+		htmlDon.style.fontSize=htmlWidth/10 + "px";
+ </script>	
+</body>
+</html>

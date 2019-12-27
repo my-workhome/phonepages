@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1,minimun-scale=1,user-scalable=no">
+	<title>新品推荐</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/wk_all.css">
+
+
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	 <script>
+      $(function() {
+        // 底下操作栏事件 
+          $("#home_page").click(function () {
+            window.location.href="../pages/钱包首页.html"
+          });
+          $("#order_center").click(function () {
+            window.location.href="../pages/我的订单.html"
+          });
+          $("#shopping_cart").click(function () {
+            window.location.href="../pages/购物车.html"
+          });
+          $("#classification").click(function () {
+            window.location.href="../pages/商品分类.html"
+          });
+          // 头部导航事件
+          $("#special_goods").click(function () {
+            window.location.href="../pages/在线商城.html"
+          });
+          $("#new_recommend").click(function () {
+            window.location.href="../pages/新品推荐.html"
+          });
+        $("#popularity_goods").click(function () {
+            window.location.href="../pages/人气商品.html"
+          });
+        // 点击图片跳转
+         $(".inlube_body_box1").on("click",".goods_img",function () {
+            window.location.href="../pages/商品详情.html"
+          });
+        // 购买操作面板
+        $(".xp_btn").click(function () {
+            var a = $(this).attr("name");
+            var img=$("."+a+" "+"img").attr("src");
+            var price=$("."+a+" "+".price").text();
+            var inventory=2;
+          $("body").append("<div id='rq_order'></div>");
+          $("#rq_order").addClass('rq_order');
+          $("body").append("<div id='rq_order_form'></div>");
+          $("#rq_order_form").addClass('rq_order_form');
+          $("#rq_order_form").html('<form class="rq_order_form_body">                           <div class="space_btw rq_order_form_img_price">       <div ><img class="goods_img img-responsive white_bg rq_order_form_img" src='+img+'></div>                 <div class="rq_order_form_price">                     <div class="text_red_30px margin_botton20px">'+price+'</div>                                                  <div class="font_size_24gray">库存：'+inventory+'件</div></div>                                           <div><img id="close" class="img-responsive white_bg img_size" src="../img/icon_19.png"></div></div><div class="buy_num space_btw"><div class="text_black_24px">数  量</div><div class="text_black_24px set_buy_num">限购2件<input type="button" class="btn reduce service_20px text_black_36px" value="-"/><input type="text" class="btn text_black_36line_h num" value="1"/><input type="button" class="btn add text_black_36px" value="+"/></div></div>  <div class="text_white_30px space_btw buy_btn">   <input type="button" class="btn text_white_30px green_btn" id="put_shopcar" value="加入购物车" /><input type="button" class="btn text_white_30px red_btn" id="buy_now" value="立即购买" /></div></form>');
+          // 数量加
+          $(".add").click(function () {
+            var num=parseInt($(".num").val())+1;
+           $(".num").val(num);
+          });
+          // 数量减
+          $(".reduce").click(function () {
+            var num=parseInt($(".num").val())-1;
+             $(".num").val(num);
+          });
+          // 关闭按钮
+          $("#close").click(function () {
+              $("#rq_order").remove();
+               $("#rq_order_form").remove();
+            });
+             $("#put_shopcar").click(function () {
+            window.location.href="../pages/购物车.html"
+          });
+           $("#buy_now").click(function () {
+            window.location.href="../pages/订单提交.html"
+          });
+        });
+      });
+  </script>
+</head>
+<body class="gray_bg">
+
+	
+  <div class="white_bg ">
+   <div class="line_sall_top ">
+ 	   <div class=" text_sall_nexybtn" id="special_goods">特价商品</div>
+     <div class=" text_sall_firstbtn" id="new_recommend">新品推荐</div>
+ 	   <div class="text_sall_nexybtn" id="popularity_goods">人气商品</div>
+   </div>
+
+   <!-- 新品推荐 -->
+   <div class="new_goods" >
+   <div class="inlube_body_box1 xp_goods1">
+     <!-- 商品图片 -->
+      <div class="goods_img">
+         <img src="../img/mallpic.png" class="img-responsive"  alt="">
+ 	    </div> 
+        <!-- 商品描述部分 -->
+ 	    <div class="goods_describe">
+        <!-- 名称价格 -->
+         <div class="goods_describe_top">
+            <div class="font_size_24black mar_top_10px">苹果iPhone XS Max（全网通）</div>
+            <div class="font_size_36black mar_top_40px price">￥5099</div>
+         </div>
+         <!-- 已售&购买 -->
+         <div class="goods_describe_foot">
+            <div class="font_size_24gray rel_sell">已售60件</div>
+            <div><button class="btn btn-info text_30px_white btn_buy img-rounded xp_btn"name="xp_goods1">购买</button></div>
+         </div>
+ 	    </div>  
+   </div>
+   <div class="inlube_body_box1 xp_goods2">
+     <!-- 商品图片 -->
+      <div class="goods_img">
+         <img src="../img/mallpic.png" class="img-responsive"  alt="">
+      </div> 
+        <!-- 商品描述部分 -->
+      <div class="goods_describe">
+        <!-- 名称价格 -->
+         <div class="goods_describe_top">
+            <div class="font_size_24black mar_top_10px">苹果iPhone XS Max（全网通）</div>
+            <div class="font_size_36black mar_top_40px price">￥5099</div>
+         </div>
+         <!-- 已售&购买 -->
+         <div class="goods_describe_foot">
+            <div class="font_size_24gray rel_sell">已售60件</div>
+            <div><button class="btn btn-info text_30px_white btn_buy img-rounded xp_btn"name="xp_goods2">购买</button></div>
+         </div>
+      </div>  
+   </div>
+   <div class="inlube_body_box1 xp_goods3">
+     <!-- 商品图片 -->
+      <div class="goods_img">
+         <img src="../img/mallpic.png" class="img-responsive"  alt="">
+      </div> 
+        <!-- 商品描述部分 -->
+      <div class="goods_describe">
+        <!-- 名称价格 -->
+         <div class="goods_describe_top">
+            <div class="font_size_24black mar_top_10px">苹果iPhone XS Max（全网通）</div>
+            <div class="font_size_36black mar_top_40px price">￥5099</div>
+         </div>
+         <!-- 已售&购买 -->
+         <div class="goods_describe_foot">
+            <div class="font_size_24gray rel_sell">已售60件</div>
+            <div><button class="btn btn-info text_30px_white btn_buy img-rounded xp_btn"name="xp_goods3">购买</button></div>
+         </div>
+      </div>  
+   </div>
+   </div>
+ <div class="" style="margin-bottom: 1.6rem"></div>
+   <div class="inline_mall_foot white_bg">
+      <div class="div_size150px" id="home_page">
+        <div class="div_size40px"><img class="img-responsive" src="../img/mallicon2.png" alt=""></div>
+        <div class="font_size_24gray6 mar_top_10px">首页</div>
+      </div>
+      <div class="div_size150px" id="classification">
+        <div class="div_size40px"><img class="img-responsive" src="../img/mallicon3.png" alt=""></div>
+        <div class="font_size_24gray6 mar_top_10px">分类</div>
+      </div>
+      <div class="div_size150px" id="shopping_cart">
+        <div class="div_size40px"><img class="img-responsive unservice_20px" src="../img/mallicon4.png" alt=""></div>
+        <div class="font_size_24gray6 mar_top_10px" >购物车</div>
+      </div>
+      <div class="div_size150px" id="order_center">
+        <div class="div_size40px"><img class="img-responsive" src="../img/mallicon1.png" alt=""></div>
+        <div class="font_size_24gray6 mar_top_10px">订单中心</div>
+      </div>
+    </div>
+   </div>
+
+  </div>
+
+
+
+ <script type="text/javascript">
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	let htmlDon=document.getElementsByTagName("html")[0];
+		htmlDon.style.fontSize=htmlWidth/10 + "px";
+ </script>
+</body>
+</html>

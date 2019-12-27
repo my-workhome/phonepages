@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1,minimun-scale=1,user-scalable=no">
+	<title>输入新支付密码</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/wk_all.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script>
+    $(function () {
+         let password1=$(".input_password .input_password_box input");
+      let times1=0;
+       $(password1).val("");  
+         times1=0;
+      // 密码输入
+       $(".t-keybord1 td").click(function () {
+      
+          if($(this).attr("value")=="."){
+          $(".putin_password").css("display","none");
+        $(".putin_passwordagain").css("display","block");
+          }
+           else if($(this).attr("value")=="no"){
+
+           }
+          // 删除
+          else if($(this).attr("value")=="del"){
+
+            if (times1>=0) {
+              $(password1[times1-1]).val("");
+              times1=times1-1;
+              if(times1<0){times1=0;}
+            }
+          }
+          // 内容输入
+          else{
+            if(times1<=5){ 
+            $(password1[times1]).val($(this).attr("value"));
+            times1=times1+1;
+          }  
+          }
+       });
+        let password2=$(".putin_passwordagain .input_password_box input");
+      let times2=0;
+       $(password2).val("");  
+         times2=0;
+      // 密码输入
+       $(".t-keybord2 td").click(function () {
+      
+          if($(this).attr("value")=="."){
+             
+      let word1=$(".putin_password .input_password_box input");
+      var numArr1 = []; // 定义一个空数组
+        for (var i = 0; i < word1.length; i++) {
+            numArr1.push(word1.eq(i).val()); // 将文本框的值添加到数组中
+        }
+         let word2=$(".putin_passwordagain .input_password_box input");
+         var numArr2 = []; // 定义一个空数组
+         for (var i = 0; i < word1.length; i++) {
+            numArr2.push(word2.eq(i).val()); // 将文本框的值添加到数组中
+        }
+
+      if (parseInt(numArr1.join(""))==parseInt(numArr2.join(""))) {
+        window.location.href="../pages/成功提示.html"}
+     else{
+      $(".gray_div").css("display","block");
+      $(".bank_question").css("display","block");
+     }
+     
+          }
+           else if($(this).attr("value")=="no"){
+
+           }
+          // 删除
+          else if($(this).attr("value")=="del"){
+
+            if (times2>=0) {
+              $(password2[times2-1]).val("");
+              times2=times2-1;
+              if(times2<0){times2=0;}
+            }
+          }
+          // 内容输入
+          else{
+            if(times2<=5){ 
+            $(password2[times2]).val($(this).attr("value"));
+            times2=times2+1;
+          }  
+          }
+       }); 
+    $("#input_again").click(function () {
+       $(".putin_password").css("display","block");
+      $(".gray_div").css("display","none");
+      $(".bank_question").css("display","none");
+      $(".putin_passwordagain").css("display","none"); 
+      $(".putin_password .input_password_box input").val("").text("");
+      $(".putin_passwordagain .input_password_box input").val("").text("");
+        times1=0;
+        times2=0;
+    });
+
+    });
+  </script>
+
+</head> <body class="gray_bg">   
+
+
+<!-- 输入密码 -->
+<div class="putin_password">
+<div id="input_password_all" class="gray_bg"> 
+	<div class="input_password mar_top_200px">
+		<div class="text_black_30px">请设置新支付密码</div>
+		<div class="input_password_box mar_top_40px">
+			<input type="password" value=""><input type="password" value=""><input type="password" value=""><input type="password" value=""><input type="password" value=""><input style="border-right:#ccc 1px solid;" type="password" value="">
+		</div>
+		<div class="font_size_24gray mar_top_30px">不是登录密码或连续数字</div>
+	</div>
+<!-- 支付密码键盘 -->
+<div id="t-keybord" class="t-keybord1">
+  <table id="t-keyvalue" class="keyboard" cellspacing="0" cellpadding="0">
+<tr><td value="no" colspan="3">安全输入键盘</td></tr>
+    <tr>
+      <td value="1">1</td>
+      <td value="2">2</td>
+      <td value="3">3</td>
+    </tr>
+    <tr>
+      <td value="4">4</td>
+      <td value="5">5</td>
+      <td value="6">6</td>
+    </tr>
+    <tr>
+      <td value="7">7</td>
+      <td value="8">8</td>
+      <td value="9">9</td>
+    </tr>
+    <tr>
+      <td value=".">确定</td>
+      <td value="0">0</td>
+      <td value="del">删除</td>
+    </tr>
+  </table>
+</div>
+</div> 
+</div>
+
+<!-- 确认新支付密码 -->
+<div class="putin_passwordagain" style="display: none;">
+<!-- 输入密码 -->
+<div id="input_password_all" class="gray_bg"> 
+  <div class="input_password mar_top_200px">
+    <div class="text_black_30px">请再次输入支付密码</div>
+    <div class="input_password_box mar_top_40px">
+      <input type="password" value=""><input type="password" value=""><input type="password" value=""><input type="password" value=""><input type="password" value=""><input style="border-right:#ccc 1px solid;" type="password" value="">
+    </div>
+    <div class="font_size_24gray mar_top_30px">不是登录密码或连续数字</div>
+  </div>
+<!-- 支付密码键盘 -->
+<div id="t-keybord" class="t-keybord2">
+  <table id="t-keyvalue" cellspacing="0" cellpadding="0">
+<tr><td value="no" colspan="3">安全输入键盘</td></tr>
+    <tr>
+      <td value="1">1</td>
+      <td value="2">2</td>
+      <td value="3">3</td>
+    </tr>
+    <tr>
+      <td value="4">4</td>
+      <td value="5">5</td>
+      <td value="6">6</td>
+    </tr>
+    <tr>
+      <td value="7">7</td>
+      <td value="8">8</td>
+      <td value="9">9</td>
+    </tr>
+    <tr>
+      <td value=".">确定</td>
+      <td value="0">0</td>
+      <td value="del">删除</td>
+    </tr>
+  </table>
+</div>
+</div> 
+</div>
+<!-- 密码不一致 -->
+<div>
+<div class="gray_div" style="display: none;"></div>
+<div class="bank_question" style="display: none;" >
+    <div class="text_black_30px error_number_bank_phone"> </div>
+    <div class="error_number_bank_qus text_gray_30px">
+    两次输入密码不一致，请重新输入
+    </div>
+   
+    <div id="input_again" class="error_number_bank_under text_blue_30px">重新输入</div>
+  </div>
+</div>
+
+
+ <script type="text/javascript">
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	let htmlDon=document.getElementsByTagName("html")[0];
+		htmlDon.style.fontSize=htmlWidth/10 + "px";
+ </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1,minimun-scale=1,user-scalable=no">
+	<title>钱包首页</title>
+	<link rel="stylesheet" type="text/css" href="../css/wk_all.css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script>
+    $(function () {
+      $("#my_balance").click(function () {
+        window.location.href="../pages/钱包管理.html"
+      });
+     $("#notice").click(function () {
+        window.location.href="../pages/通知公告.html"
+      });
+     $("#inline_mall").click(function () {
+        window.location.href="../pages/在线商城.html"
+      });
+    });
+  </script>
+</head>
+<body style="background-color:#ececec;">
+  <!-- 头部钱包 -->
+   <div class="head" id="my_balance">
+       <div class="text_white_30px balance_location">企业钱包余额（元）</div>
+       <div class="text_white_90px balance" >102.85</div>
+       <div class="btn text_white_30px btn_white "  style="border: white 1px solid;"><div>账户详情</div></div>
+   </div>
+<!-- 通知公告 -->
+   <div class="notice" id="notice">
+       <img class="loudspeaker_img" style="margin-left: 0.4rem; margin-right: 0.333333rem; width: 0.533333rem;
+  height:0.453333rem;" src="../img/icon_1.png">
+       <div class="text_black_30px notice_text">通知公告</div>
+       <div class="text_gray_30px">关于钉子钱包提现额度调整通知！</div>
+   </div>
+	<div class="gray_gbdiv"></div>
+
+  <!-- 钉子支付 -->
+   <div class="foot" style="background-color: white;">
+ 	   <div class="service text_black_30px "> 钉子支付</div>   
+   </div>
+
+   <!-- 商城管理 -->
+   <div class="mall" style="background-color: white;"> 
+   			<img style="width: 1.146667rem;height:1.133333rem; margin-top: 0.8rem;margin-left: 1.106667rem; margin-bottom: 0.306667rem;" id="inline_mall" src="../img/icon_2.png">
+			<div class="text_blue "><lable for="inline_mall"> 在线商城</lable></div>
+   </div>
+ <script type="text/javascript">
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	let htmlDon=document.getElementsByTagName("html")[0];
+		htmlDon.style.fontSize=htmlWidth/10 + "px";
+ </script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1,minimun-scale=1,user-scalable=no">
+	<title>商品分类</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/wk_all.css">
+
+
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script>
+    $(function () {
+       // 底下操作栏事件 
+          $("#home_page").click(function () {
+            window.location.href="../pages/钱包首页.html"
+          });
+          $("#order_center").click(function () {
+            window.location.href="../pages/我的订单.html"
+          });
+          $("#shopping_cart").click(function () {
+            window.location.href="../pages/购物车.html"
+          });
+          $("#classification").click(function () {
+            window.location.href="../pages/商品分类.html"
+          });
+          // 头部导航事件
+          $("#special_goods").click(function () {
+            window.location.href="../pages/在线商城.html"
+          });
+          $("#new_recommend").click(function () {
+            window.location.href="../pages/新品推荐.html"
+          });
+        $("#popularity_goods").click(function () {
+            window.location.href="../pages/人气商品.html"
+          });
+        $(".space_btw").on("click","img",function () {
+          window.location.href="../pages/商品详情.html"
+        });
+       
+    });
+  </script>
+</head>
+<body class="gray_bg">
+  <div class="white_bg " >
+    <!-- 商品分类头部 -->
+    <div class="space_btw " style="margin-bottom:1.6rem;">
+      <!-- 商品分类左边 -->
+      <div class="goods_category_left gray_bg">
+        <button class="sw_btn btn form-control text_black_24px height_80px">实物类</button>
+        <button class="zc_btn btn form-control gray_bg text_black_24px height_80px" style="border-bottom:#ccc solid;">众筹类</button>
+      </div>
+      <!-- 商品分类右边 -->
+      <div class="goods_category_right">
+        <div class="space_btw margin_botton20px">
+          <div class="col_flex font_size_24black">
+              <div class=""><img class="height_width_200px img-responsive margin_botton20px" id="goods_11 " src="../img/mallpic.png" alt=""> <label for="goods_11" style="width: 2.666667rem; text-align: center;">商品名称</label></div>
+              <div></div>
+          </div>
+          <div class="col_flex font_size_24black">
+              <div class="center"><img class="height_width_200px img-responsive margin_botton20px" id="goods_12" src="../img/mallpic.png" alt=""> <label for="goods_12" style="width: 2.666667rem;text-align: center;">商品名称</label></div>
+              <div></div>
+          </div>
+          </div>
+          <!-- 第二行 -->
+           <div class="space_btw margin_botton20px">
+          <div class="col_flex font_size_24black">
+              <div class=""><img class="height_width_200px img-responsive margin_botton20px" id="goods_11 " src="../img/mallpic.png" alt=""> <label for="goods_11" style="width: 2.666667rem; text-align: center;">商品名称</label></div>
+              <div></div>
+          </div>
+          <div class="col_flex font_size_24black">
+              <div class="center"><img class="height_width_200px img-responsive margin_botton20px" id="goods_12" src="../img/mallpic.png" alt=""> <label for="goods_12" style="width: 2.666667rem;text-align: center;">商品名称</label></div>
+              <div></div>
+          </div>
+          </div>
+          <!-- 第三行 -->
+           <div class="space_btw margin_botton20px">
+          <div class="col_flex font_size_24black">
+              <div class=""><img class="height_width_200px img-responsive margin_botton20px" id="goods_11 " src="../img/mallpic.png" alt=""> <label for="goods_11" style="width: 2.666667rem; text-align: center;">商品名称</label></div>
+              <div></div>
+          </div>
+          <div class="col_flex font_size_24black">
+              <div class="center"><img class="height_width_200px img-responsive margin_botton20px" id="goods_12" src="../img/mallpic.png" alt=""> <label for="goods_12" style="width: 2.666667rem;text-align: center;">商品名称</label></div>
+              <div></div>
+          </div>
+          </div>
+      </div>
+
+    </div>
+    <!-- 下标操作栏 -->
+
+
+   <div class="inline_mall_foot white_bg" style="border-top:#ececec solid;">
+    <!-- 首页 -->
+      <div class="div_size150px" id="home_page">
+        <div class="div_size40px"><img class="img-responsive" src="../img/mallicon2.png" alt=""></div>
+        <div class="font_size_24gray6 mar_top_10px">首页</div>
+      </div>
+      <!-- 商品分类 -->
+      <div class="div_size150px" id="classification">
+        <div class="div_size40px"><img class="img-responsive" src="../img/mallicon3.png" alt=""></div>
+        <div class="font_size_24gray6 mar_top_10px">分类</div>
+      </div>
+      <!-- 购物车 -->
+      <div class="div_size150px" id="shopping_cart">
+        <div class="div_size40px"><img class="img-responsive" src="../img/mallicon4.png" alt=""></div>
+        <div class="font_size_24gray6 mar_top_10px" >购物车</div>
+      </div>
+      <!-- 订单中心 -->
+      <div class="div_size150px" id="order_center">
+        <div class="div_size40px"><img class="img-responsive" src="../img/mallicon1.png" alt=""></div>
+        <div class="font_size_24gray6 mar_top_10px">订单中心</div>
+      </div>
+    </div>
+
+</div>
+
+
+
+
+ <script type="text/javascript">
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	let htmlDon=document.getElementsByTagName("html")[0];
+		htmlDon.style.fontSize=htmlWidth/10 + "px";
+ </script>
+ <script type="text/javascript">
+   $('.zc_btn').click(function () {
+    $(this).css("background","white")
+    $('.sw_btn').css("background","#ececec");
+    
+   });
+   $('.sw_btn').click(function () {
+    $(this).css("background","white")
+    $('.zc_btn').css("background","#ececec");
+    
+   });
+    
+
+ </script>
+</body>
+</html>
